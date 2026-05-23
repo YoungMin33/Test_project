@@ -254,15 +254,16 @@ function buildFallbackEvaluation(answer,mission,missionScore){
 }
 
 function axisEvidenceSummary(){
-  const merged=Object.fromEntries(AXES.map(ax=>[ax,{score:0,confidence:0,evidence:[],reason:'판단 근거 부족'}]));
+  const merged=Object.fromEntries(AXES.map(ax=>[ax,{score:0,confidence:0,evidence:[],reason:'',flags:[],sources:0}]));
   const counts=Object.fromEntries(AXES.map(ax=>[ax,0]));
   state.evaluationLogs.forEach(log=>{
     const axes=log.evaluation?.axes||{};
     AXES.forEach(ax=>{
       const r=axes[ax];if(!r)return;
-      if(r.score>0||r.evidence?.length){counts[ax]++;merged[ax].score+=r.score||0;merged[ax].confidence+=r.confidence||0;}
+      if(r.score>0||r.evidence?.length||r.confidence>0){counts[ax]++;merged[ax].score+=r.score||0;merged[ax].confidence+=r.confidence||0;merged[ax].sources++;}
       (r.evidence||[]).forEach(ev=>merged[ax].evidence.push({...ev,mission_title:log.mission_title}));
       if(r.reason&&r.reason!==merged[ax].reason)merged[ax].reason=r.reason;
+      (log.evaluation?.flags||[]).forEach(f=>{if(!merged[ax].flags.includes(f))merged[ax].flags.push(f);});
     });
   });
   AXES.forEach(ax=>{
@@ -273,6 +274,16 @@ function axisEvidenceSummary(){
     merged[ax].evidence=merged[ax].evidence.slice(0,3);
   });
   return merged;
+}
+
+function evidenceStatusText(ax,r){
+  const pct=Math.round((r.confidence||0)*100);
+  const evCount=r.evidence?.length||0;
+  const flagText=r.flags?.length?` flags=${r.flags.join(', ')}`:'';
+  if(evCount>0&&r.confidence>=0.7)return`${AX_LABELS[ax]}는 인용 근거 ${evCount}개와 신뢰도 ${pct}%로 점수 ${r.score}가 산출되었습니다.${flagText}`;
+  if(evCount>0)return`${AX_LABELS[ax]}는 인용 근거 ${evCount}개가 있으나 신뢰도 ${pct}%라 점수 ${r.score}로 제한해 해석합니다.${flagText}`;
+  if(r.score>0)return`${AX_LABELS[ax]}는 점수 ${r.score}가 산출되었지만 인용 근거가 0개라 신뢰도 ${pct}%로 표시합니다.${flagText}`;
+  return`${AX_LABELS[ax]}는 점수 0, 인용 근거 0개, 신뢰도 ${pct}%입니다.${flagText}`;
 }
 
 /* ── 채점 ── */
@@ -540,15 +551,16 @@ function rEvidence(){
   const summary=axisEvidenceSummary();
   const cards=AXES.map(ax=>{
     const r=summary[ax];
-    const low=r.confidence<0.55||!r.evidence.length;
+    const evCount=r.evidence.length;
+    const low=r.confidence<0.55||evCount===0;
     const quotes=r.evidence.length
       ? r.evidence.map(ev=>`<div class="ev-quote">"${esc(ev.quote)}"</div>`).join('')
-      : `<div class="ev-quote ev-low">판단 근거 부족</div><div class="ev-quote ev-low">추가 답변 필요</div>`;
-    const rationale=low?'근거가 부족하거나 신뢰도가 낮아 보수적으로 해석합니다.':(r.reason||r.evidence[0]?.rationale||'답변에 포함된 행동 근거를 기준으로 산출했습니다.');
+      : `<div class="ev-quote ev-low">score=${r.score}, confidence=${Math.round((r.confidence||0)*100)}%, evidence=0</div>`;
+    const rationale=evCount>0?(r.evidence[0]?.rationale||r.reason||evidenceStatusText(ax,r)):evidenceStatusText(ax,r);
     return`<div class="ev-card">
       <div class="ev-head">
         <div class="ev-title">${ax} ${AX_LABELS[ax]}</div>
-        <div class="ev-meta${low?' ev-low':''}">점수 ${r.score} / 신뢰도 ${Math.round((r.confidence||0)*100)}%</div>
+        <div class="ev-meta${low?' ev-low':''}">점수 ${r.score} / 신뢰도 ${Math.round((r.confidence||0)*100)}% / 근거 ${evCount}</div>
       </div>
       <div class="ev-quotes">${quotes}</div>
       <div class="ev-rationale">${esc(rationale)}</div>
@@ -600,21 +612,34 @@ function rQuad(){
     const ss=state.missionScores[jc]||[];if(!ss.length)return 0.5;
     return ss.reduce((s,sc)=>s+AXES.reduce((a,k)=>a+(sc[k]||0),0)/AXES.length,0)/ss.length;
   }
-  const Q={
-    q1:{l:'강한 후보',d:'잘했고 즐거웠어. 적성과 동기가 모두 일치해.',c:'q1'},
-    q2:{l:'능력은 있지만…',d:'성과는 좋지만 흥미가 낮아. 지속 동기를 점검해봐.',c:'q2'},
-    q3:{l:'학습 가능성',d:'즐거웠지만 아직 서투른 것 같아. 경험이 쌓이면 달라질 수 있어.',c:'q3'},
-    q4:{l:'비적합',d:'성과도 낮고 즐겁지도 않았어. 다른 방향이 맞을 수 있어.',c:'q4'},
-  };
+  function axisAvg(jc){
+    const ss=state.missionScores[jc]||[];
+    const avg=Object.fromEntries(AXES.map(ax=>[ax,0]));
+    if(!ss.length)return avg;
+    AXES.forEach(ax=>{avg[ax]=ss.reduce((s,row)=>s+(row[ax]||0),0)/ss.length;});
+    return avg;
+  }
+  function quadText(jd,pf,em,compat,topAx,lowAx,count){
+    const perfPct=Math.round(pf*100), emotionPct=Math.round(em*100);
+    const perfBand=pf>=0.45?'수행 높음':'수행 낮음';
+    const emotionBand=em>=0.6?'흥미 높음':'흥미 낮음';
+    const label=`${perfBand} · ${emotionBand}`;
+    const detail=count
+      ? `${jd.job_name} 미션 ${count}개 기준, 수행 ${perfPct}%, 흥미 ${emotionPct}%, 직무 적합도 ${compat}점입니다. 가장 강한 축은 ${AX_LABELS[topAx]}이고 가장 낮은 축은 ${AX_LABELS[lowAx]}입니다.`
+      : `${jd.job_name} 평가 데이터 0개, 수행 ${perfPct}%, 흥미 ${emotionPct}%, 직무 적합도 ${compat}점입니다.`;
+    return{label,detail};
+  }
   const cards=state.selectedJobs.map(jc=>{
     const jd=JOB_DEFS.find(j=>j.job_code===jc);
     const pf=perf(jc),em=emotionScore(jc);
     const q=pf>=0.45&&em>=0.6?'q1':pf>=0.45&&em<0.6?'q2':pf<0.45&&em>=0.6?'q3':'q4';
-    const qd=Q[q];
-    return`<div class="quad-cell ${qd.c}${q==='q1'?' hl':''}">
+    const avg=axisAvg(jc);
+    const sorted=AXES.slice().sort((a,b)=>(avg[b]||0)-(avg[a]||0));
+    const txt=quadText(jd,pf,em,state.compatibility[jc]||0,sorted[0],sorted[sorted.length-1],(state.missionScores[jc]||[]).length);
+    return`<div class="quad-cell ${q}${q==='q1'?' hl':''}">
       <div class="quad-jname">${jd.icon} ${jd.job_name}</div>
-      <div class="quad-lbl">${qd.l}</div>
-      <div class="quad-desc">${qd.d}</div>
+      <div class="quad-lbl">${txt.label}</div>
+      <div class="quad-desc">${txt.detail}</div>
     </div>`;
   }).join('');
   return`<div class="rs"><div class="rs-title">성과 × 감정 사분면</div><div class="quad-grid">${cards}</div></div>`;
