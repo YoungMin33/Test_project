@@ -207,10 +207,50 @@ function saveEvaluationLog(entry){
   try{localStorage.setItem(EVAL_LOG_KEY,JSON.stringify(logs));}catch(_){}
 }
 
+function clamp(v,min,max){return Math.min(Math.max(v,min),max)}
+function normText(v){return String(v||'').replace(/\s+/g,' ').trim().toLowerCase()}
+function uniqueRatio(v){
+  const toks=normText(v).split(/\s+/).filter(Boolean);
+  return toks.length?new Set(toks).size/toks.length:0;
+}
+function countNums(v){return (String(v||'').match(/\d+(?:[.,]\d+)?%?/g)||[]).length}
+function keywordHits(answer,keywords){
+  const txt=normText(answer);
+  return (keywords||[]).map(k=>String(k||'').trim()).filter(k=>k&&txt.includes(normText(k)));
+}
+function markerHits(answer,markers){
+  const txt=normText(answer);
+  return markers.filter(m=>txt.includes(normText(m))).length;
+}
+
 function buildFallbackEvaluation(answer,mission,missionScore){
-  return{mission_id:mission.mission_id,prompt_version:'keyword-fallback-v1',flags:['low_confidence'],axes:Object.fromEntries(AXES.map(ax=>[
-    ax,{score:missionScore[ax]>0?1:0,confidence:0.35,evidence:[],reason:'LLM 평가 실패로 키워드 기반 임시 점수만 사용했습니다.'}
-  ]))};
+  const len=normText(answer).length;
+  const uniq=uniqueRatio(answer);
+  const nums=countNums(answer);
+  const repPenalty=uniq<0.45?0.12:0;
+  const detailBonus=len>=80?0.08:len>=30?0.04:0;
+  const markers={
+    AX1:['데이터','수치','비율','비교','분석','근거','통계','p=','%'],
+    AX2:['확인','관찰','패턴','추적','탐색','검사','파악'],
+    AX3:['우선','먼저','전략','가설','검증','결정','선택','단기','장기','권고'],
+    AX4:['팀','공유','협업','보고','역할','승인','부서'],
+    AX5:['고객','공감','사과','소통','안내','신뢰','사용자','이해']
+  };
+  const axes=Object.fromEntries(AXES.map(ax=>{
+    const hits=keywordHits(answer,mission.rubric?.[ax]||[]);
+    const mh=markerHits(answer,markers[ax]||[]);
+    const signal=mission.axis_signals?.[ax]||0;
+    const raw=hits.length*0.45+mh*0.18+(ax==='AX1'?Math.min(nums,3)*0.15:0)+signal*0.8;
+    const score=raw>=1.8&&len>=40&&uniq>=0.45?2:raw>=0.45?1:0;
+    const conf=score===0
+      ? clamp(0.08+signal*0.1,0.05,0.18)
+      : clamp(0.18+hits.length*0.06+mh*0.04+signal*0.12+detailBonus-repPenalty,0.16,0.52);
+    return[ax,{score,confidence:Number(conf.toFixed(2)),evidence:[],reason:`Fallback heuristic. keyword_hits=${hits.length}, marker_hits=${mh}, signal=${signal.toFixed(2)}.`}];
+  }));
+  const flags=['low_confidence'];
+  if(len<15)flags.push('too_short');
+  if(uniq<0.45)flags.push('ambiguous');
+  return{mission_id:mission.mission_id,prompt_version:'keyword-fallback-v2',flags,axes};
 }
 
 function axisEvidenceSummary(){

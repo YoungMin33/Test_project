@@ -36,8 +36,34 @@ function emptyAxis() {
   };
 }
 
+function clamp(value: number, min: number, max: number) {
+  return Math.min(Math.max(value, min), max);
+}
+
 function normalizeText(value: string) {
   return value.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function countNumbers(value: string) {
+  return value.match(/\d+(?:[.,]\d+)?%?|\d+(?:[.,]\d+)?/g)?.length ?? 0;
+}
+
+function uniqueTokenRatio(value: string) {
+  const tokens = normalizeText(value).split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return 0;
+  return new Set(tokens).size / tokens.length;
+}
+
+function countMarkers(answer: string, markers: string[]) {
+  const normalizedAnswer = normalizeText(answer);
+  return markers.filter((marker) => normalizedAnswer.includes(normalizeText(marker))).length;
+}
+
+function keywordHits(answer: string, keywords: string[]) {
+  const normalizedAnswer = normalizeText(answer);
+  return keywords
+    .map((keyword) => keyword.trim())
+    .filter((keyword) => keyword && normalizedAnswer.includes(normalizeText(keyword)));
 }
 
 function quoteAppearsInAnswerStrict(answer: string, quote: string) {
@@ -130,30 +156,89 @@ function toMissionScore(evaluation: Evaluation, mission: Mission): MissionScore 
   })) as MissionScore;
 }
 
+function heuristicFallbackEvaluation(mission: Mission, answer: string, cause: string): Evaluation {
+  const length = normalizeText(answer).length;
+  const numberCount = countNumbers(answer);
+  const repetitionPenalty = uniqueTokenRatio(answer) < 0.45 ? 0.12 : 0;
+  const genericDetail = length >= 80 ? 0.08 : length >= 30 ? 0.04 : 0;
+  const markersByAxis: Record<(typeof AXES)[number], string[]> = {
+    AX1: ["data", "log", "metric", "rate", "ratio", "compare", "p=", "%"],
+    AX2: ["check", "observe", "pattern", "trace", "inspect", "explore"],
+    AX3: ["priority", "strategy", "hypothesis", "verify", "decide", "option", "recommend"],
+    AX4: ["team", "share", "report", "role", "approve", "department"],
+    AX5: ["customer", "user", "empathy", "apologize", "communicate", "trust"]
+  };
+
+  const axes = Object.fromEntries(AXES.map((axis) => {
+    const hits = keywordHits(answer, mission.rubric?.[axis] ?? []);
+    const markerHits = countMarkers(answer, markersByAxis[axis]);
+    const signal = mission.axis_signals?.[axis] ?? 0;
+    const numericBonus = axis === "AX1" ? Math.min(numberCount, 3) * 0.15 : 0;
+    const markerBonus = Math.min(markerHits, 3) * 0.18;
+    const keywordScore = hits.length * 0.45;
+    const signalBonus = signal * 0.8;
+    const raw = keywordScore + markerBonus + numericBonus + signalBonus;
+
+    let score = 0;
+    if (raw >= 1.8 && length >= 40 && uniqueTokenRatio(answer) >= 0.45) score = 2;
+    else if (raw >= 0.45) score = 1;
+
+    const confidence = score === 0
+      ? clamp(0.08 + signal * 0.1, 0.05, 0.18)
+      : clamp(0.18 + hits.length * 0.06 + markerHits * 0.04 + signal * 0.12 + genericDetail - repetitionPenalty, 0.16, 0.52);
+
+    return [axis, {
+      score,
+      confidence: Number(confidence.toFixed(2)),
+      evidence: [],
+      reason: `Heuristic fallback (${cause}). keyword_hits=${hits.length}, marker_hits=${markerHits}, signal=${signal.toFixed(2)}.`
+    }];
+  })) as Evaluation["axes"];
+
+  const flags: Evaluation["flags"] = ["low_confidence"];
+  if (length < 15) flags.push("too_short");
+  if (uniqueTokenRatio(answer) < 0.45) flags.push("ambiguous");
+
+  return {
+    mission_id: mission.mission_id,
+    axes,
+    flags,
+    prompt_version: `${PROMPT_VERSION}-fallback`
+  };
+}
+
 export async function evaluateAnswer({ mission, answer }: EvaluateAnswerInput): Promise<EvaluateAnswerResult> {
   if (!process.env.OPENAI_API_KEY) {
-    throw new Error("OPENAI_API_KEY is not set.");
+    const evaluation = heuristicFallbackEvaluation(mission, answer, "missing_api_key");
+    return { evaluation, missionScore: toMissionScore(evaluation, mission) };
   }
 
-  const response = await openai.responses.parse({
-    model: process.env.OPENAI_EVAL_MODEL ?? "gpt-4.1-mini",
-    temperature: 0,
-    input: [
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: buildEvaluationPrompt({ mission, answer }) }
-    ],
-    text: {
-      format: zodTextFormat(EvaluationSchema, "jobsim_evaluation")
+  let evaluation: Evaluation;
+  try {
+    const response = await openai.responses.parse({
+      model: process.env.OPENAI_EVAL_MODEL ?? "gpt-4.1-mini",
+      temperature: 0,
+      input: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: buildEvaluationPrompt({ mission, answer }) }
+      ],
+      text: {
+        format: zodTextFormat(EvaluationSchema, "jobsim_evaluation")
+      }
+    });
+
+    const parsed = response.output_parsed;
+    if (!parsed) {
+      throw new Error("OpenAI returned an empty evaluation.");
     }
-  });
 
-  const parsed = response.output_parsed;
-  if (!parsed) {
-    throw new Error("OpenAI returned an empty evaluation.");
+    parsed.prompt_version = parsed.prompt_version || PROMPT_VERSION;
+    evaluation = validateAndRecalculate(answer, parsed);
+  } catch (error) {
+    const cause = error instanceof Error ? error.message : "unknown_llm_error";
+    evaluation = heuristicFallbackEvaluation(mission, answer, cause);
   }
 
-  parsed.prompt_version = parsed.prompt_version || PROMPT_VERSION;
-  const evaluation = validateAndRecalculate(answer, parsed);
   const missionScore = toMissionScore(evaluation, mission);
 
   return { evaluation, missionScore };
