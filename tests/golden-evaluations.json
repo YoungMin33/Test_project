@@ -1,0 +1,150 @@
+{
+  "version": "jobsim-golden-v1",
+  "description": "Golden cases for evaluator stability, length bias, axis bias, and evidence grounding checks.",
+  "defaults": {
+    "runs": 3,
+    "maxScoreRange": 1,
+    "maxConfidenceRange": 0.35,
+    "failHighScoreWithoutEvidenceAt": 3
+  },
+  "axisBias": {
+    "warnMeanAbove": 2.4,
+    "warnMeanDeltaAbove": 1.2,
+    "watchAxes": ["AX1", "AX3"]
+  },
+  "cases": [
+    {
+      "id": "da_short_clear_data_decision",
+      "mission_id": "da_03",
+      "answer": "하단 고정 버튼은 전환율이 3.2%에서 4.1%로 올랐고 p=0.032라서 적용을 권고합니다. 빨간 버튼은 3.0%로 하락했으니 제외합니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 2, "max": 4 },
+          "AX2": { "min": 0, "max": 2 },
+          "AX3": { "min": 2, "max": 4 },
+          "AX4": { "min": 0, "max": 1 },
+          "AX5": { "min": 0, "max": 2 }
+        },
+        "denyFlags": ["off_topic", "possible_prompt_injection"]
+      },
+      "tags": ["normal", "short", "data_reasoning"]
+    },
+    {
+      "id": "da_keyword_spam_not_reasoning",
+      "mission_id": "da_01",
+      "answer": "데이터 분석 로그 수치 확인 데이터 분석 로그 수치 확인 데이터 분석 로그 수치 확인 데이터 분석 로그 수치 확인",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 0, "max": 1 },
+          "AX2": { "min": 0, "max": 1 },
+          "AX3": { "min": 0, "max": 1 },
+          "AX4": { "min": 0, "max": 0 },
+          "AX5": { "min": 0, "max": 0 }
+        },
+        "confidenceMax": 0.55,
+        "allowFlags": ["low_confidence", "ambiguous"]
+      },
+      "tags": ["boundary", "keyword_spam", "length_bias"]
+    },
+    {
+      "id": "con_long_verbose_low_signal",
+      "mission_id": "con_02",
+      "answer": "전략적으로 접근해야 합니다. 시장을 잘 보고 리스크를 생각하고 효과도 생각해야 합니다. 여러 가능성을 비교해야 합니다. 좋은 방향을 선택해야 합니다. 팀과 잘 이야기하고 실행하면 좋습니다. 이 내용은 중요합니다. 다시 말해 전략적으로 접근하고 리스크와 효과를 생각해야 합니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 0, "max": 1 },
+          "AX2": { "min": 0, "max": 1 },
+          "AX3": { "min": 0, "max": 2 },
+          "AX4": { "min": 0, "max": 1 },
+          "AX5": { "min": 0, "max": 1 }
+        },
+        "confidenceMax": 0.6,
+        "allowFlags": ["low_confidence", "ambiguous"]
+      },
+      "tags": ["boundary", "long_low_signal", "length_bias"]
+    },
+    {
+      "id": "cx_customer_empathy_specific",
+      "mission_id": "cx_01",
+      "answer": "먼저 늦어진 점을 사과하고 생일 당일이라 실망이 컸겠다고 말하겠습니다. 시스템에서 배송 지연과 재고 상태를 확인한 뒤, 즉시 환불과 대체 선물 배송 중 선택지를 안내하고 배송사에는 별도로 사고 접수를 하겠습니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 1, "max": 3 },
+          "AX2": { "min": 0, "max": 2 },
+          "AX3": { "min": 1, "max": 3 },
+          "AX4": { "min": 0, "max": 2 },
+          "AX5": { "min": 2, "max": 4 }
+        },
+        "denyFlags": ["off_topic", "possible_prompt_injection"]
+      },
+      "tags": ["normal", "service", "axis_balance"]
+    },
+    {
+      "id": "too_short_answer",
+      "mission_id": "quality_01",
+      "answer": "확인해보겠습니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 0, "max": 1 },
+          "AX2": { "min": 0, "max": 1 },
+          "AX3": { "min": 0, "max": 1 },
+          "AX4": { "min": 0, "max": 1 },
+          "AX5": { "min": 0, "max": 1 }
+        },
+        "confidenceMax": 0.55,
+        "allowFlags": ["too_short", "low_confidence", "ambiguous"]
+      },
+      "tags": ["boundary", "too_short"]
+    },
+    {
+      "id": "off_topic_answer",
+      "mission_id": "ra_01",
+      "answer": "저는 점심으로 김밥을 먹었고 날씨가 좋아서 산책을 갔습니다. 이 프로젝트와는 관련된 내용이 없습니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 0, "max": 0 },
+          "AX2": { "min": 0, "max": 0 },
+          "AX3": { "min": 0, "max": 0 },
+          "AX4": { "min": 0, "max": 0 },
+          "AX5": { "min": 0, "max": 0 }
+        },
+        "confidenceMax": 0.55,
+        "allowFlags": ["off_topic", "low_confidence"]
+      },
+      "tags": ["boundary", "off_topic"]
+    },
+    {
+      "id": "mission_copy_no_added_reasoning",
+      "mission_id": "quality_01",
+      "answer": "A라인과 B라인의 비율이 8:2이고 외관 불량이 60%, 치수 오차가 30%, 기능 불량이 10%입니다. 반품률이 3.2%에서 8.7%로 급등했습니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 0, "max": 2 },
+          "AX2": { "min": 0, "max": 2 },
+          "AX3": { "min": 0, "max": 1 },
+          "AX4": { "min": 0, "max": 0 },
+          "AX5": { "min": 0, "max": 0 }
+        },
+        "confidenceMax": 0.65,
+        "allowFlags": ["low_confidence", "ambiguous"]
+      },
+      "tags": ["boundary", "prompt_copy"]
+    },
+    {
+      "id": "ax3_specific_strategy",
+      "mission_id": "quality_03",
+      "answer": "단기는 수작업 조정으로 이번 주 생산 목표를 맞추되 속도 15% 저하를 품질팀장에게 보고합니다. 장기는 지그를 설계 사양으로 재제작해 같은 불량이 반복되지 않게 하겠습니다. 단기안은 빠르지만 효율이 낮고, 장기안은 3일 걸리지만 근본 해결입니다.",
+      "expected": {
+        "axes": {
+          "AX1": { "min": 1, "max": 3 },
+          "AX2": { "min": 0, "max": 2 },
+          "AX3": { "min": 2, "max": 4 },
+          "AX4": { "min": 0, "max": 2 },
+          "AX5": { "min": 0, "max": 2 }
+        },
+        "denyFlags": ["off_topic", "possible_prompt_injection"]
+      },
+      "tags": ["normal", "strategy"]
+    }
+  ]
+}

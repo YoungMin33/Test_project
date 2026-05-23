@@ -1,0 +1,7520 @@
+{
+  "K000000821": {
+    "job_name": "제관원(제관기조작원)",
+    "cluster_id": "C3",
+    "silhouette": 0.3589,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0754,
+      "AX2": 0.5933,
+      "AX3": 0.0723,
+      "AX4": 0.214,
+      "AX5": 0.045
+    }
+  },
+  "K000000822": {
+    "job_name": "항공기정비원",
+    "cluster_id": "C1",
+    "silhouette": 0.2689,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1869,
+      "AX2": 0.3079,
+      "AX3": 0.1545,
+      "AX4": 0.2862,
+      "AX5": 0.0646
+    }
+  },
+  "K000000823": {
+    "job_name": "판금원(판금기조작원)",
+    "cluster_id": "C2",
+    "silhouette": 0.0393,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1055,
+      "AX2": 0.4694,
+      "AX3": 0.1849,
+      "AX4": 0.1765,
+      "AX5": 0.0636
+    }
+  },
+  "K000000824": {
+    "job_name": "번역가",
+    "cluster_id": "C6",
+    "silhouette": 0.0233,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3345,
+      "AX2": 0.022,
+      "AX3": 0.207,
+      "AX4": 0.1951,
+      "AX5": 0.2414
+    }
+  },
+  "K000000825": {
+    "job_name": "자연과학시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.0501,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3422,
+      "AX2": 0.4963,
+      "AX3": 0.1018,
+      "AX4": 0.0476,
+      "AX5": 0.0121
+    }
+  },
+  "K000000826": {
+    "job_name": "전기기기·제품개발기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.1124,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2702,
+      "AX2": 0.3009,
+      "AX3": 0.2434,
+      "AX4": 0.1579,
+      "AX5": 0.0275
+    }
+  },
+  "K000000827": {
+    "job_name": "노점 및 이동판매원",
+    "cluster_id": "C6",
+    "silhouette": 0.0586,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0091,
+      "AX2": 0.0098,
+      "AX3": 0.0266,
+      "AX4": 0.0056,
+      "AX5": 0.949
+    }
+  },
+  "K000000828": {
+    "job_name": "시멘트·광물제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.1484,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0516,
+      "AX2": 0.1954,
+      "AX3": 0.1042,
+      "AX4": 0.3826,
+      "AX5": 0.2662
+    }
+  },
+  "K000000829": {
+    "job_name": "토목안전·환경기술자 및 토목품질기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.2643,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2843,
+      "AX2": 0.2893,
+      "AX3": 0.1826,
+      "AX4": 0.2171,
+      "AX5": 0.0268
+    }
+  },
+  "K000000830": {
+    "job_name": "치과위생사",
+    "cluster_id": "C8",
+    "silhouette": 0.0829,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1077,
+      "AX2": 0.228,
+      "AX3": 0.065,
+      "AX4": 0.0475,
+      "AX5": 0.5519
+    }
+  },
+  "K000000831": {
+    "job_name": "도장원(도장기조작원)",
+    "cluster_id": "C3",
+    "silhouette": 0.3782,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0995,
+      "AX2": 0.4452,
+      "AX3": 0.1011,
+      "AX4": 0.1937,
+      "AX5": 0.1605
+    }
+  },
+  "K000000832": {
+    "job_name": "정보보안전문가",
+    "cluster_id": "C1",
+    "silhouette": 0.0892,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3153,
+      "AX2": 0.289,
+      "AX3": 0.155,
+      "AX4": 0.2036,
+      "AX5": 0.0371
+    }
+  },
+  "K000000833": {
+    "job_name": "사회복지관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.2297,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0556,
+      "AX2": 0.0133,
+      "AX3": 0.1053,
+      "AX4": 0.4104,
+      "AX5": 0.4155
+    }
+  },
+  "K000000834": {
+    "job_name": "정치학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.0867,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3164,
+      "AX2": 0.1186,
+      "AX3": 0.1711,
+      "AX4": 0.3509,
+      "AX5": 0.0429
+    }
+  },
+  "K000000835": {
+    "job_name": "산업안전원 및 위험관리원",
+    "cluster_id": "C2",
+    "silhouette": 0.0051,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2134,
+      "AX2": 0.52,
+      "AX3": 0.1435,
+      "AX4": 0.09,
+      "AX5": 0.033
+    }
+  },
+  "K000000836": {
+    "job_name": "농학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2767,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3629,
+      "AX2": 0.344,
+      "AX3": 0.1221,
+      "AX4": 0.1198,
+      "AX5": 0.0512
+    }
+  },
+  "K000000837": {
+    "job_name": "외국어강사",
+    "cluster_id": "C6",
+    "silhouette": 0.144,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0925,
+      "AX2": 0.0261,
+      "AX3": 0.1553,
+      "AX4": 0.1909,
+      "AX5": 0.5352
+    }
+  },
+  "K000000838": {
+    "job_name": "초등학교 교장 및 교감",
+    "cluster_id": "C7",
+    "silhouette": 0.1123,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0619,
+      "AX2": 0.0174,
+      "AX3": 0.0636,
+      "AX4": 0.779,
+      "AX5": 0.0781
+    }
+  },
+  "K000000839": {
+    "job_name": "표백·염색기조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3416,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0766,
+      "AX2": 0.2139,
+      "AX3": 0.0887,
+      "AX4": 0.4973,
+      "AX5": 0.1236
+    }
+  },
+  "K000000840": {
+    "job_name": "송·배전설비기술자",
+    "cluster_id": "C2",
+    "silhouette": 0.0145,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3749,
+      "AX2": 0.3783,
+      "AX3": 0.153,
+      "AX4": 0.0686,
+      "AX5": 0.0252
+    }
+  },
+  "K000000841": {
+    "job_name": "김치·밑반찬 제조종사원",
+    "cluster_id": "C5",
+    "silhouette": 0.1864,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0698,
+      "AX2": 0.0533,
+      "AX3": 0.0773,
+      "AX4": 0.0711,
+      "AX5": 0.7285
+    }
+  },
+  "K000000842": {
+    "job_name": "육묘 및 화훼작물재배자",
+    "cluster_id": "C2",
+    "silhouette": 0.1695,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0506,
+      "AX2": 0.3197,
+      "AX3": 0.1766,
+      "AX4": 0.1205,
+      "AX5": 0.3326
+    }
+  },
+  "K000000843": {
+    "job_name": "자재·구매사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0625,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2624,
+      "AX2": 0.1679,
+      "AX3": 0.1866,
+      "AX4": 0.194,
+      "AX5": 0.1891
+    }
+  },
+  "K000000844": {
+    "job_name": "비뇨기과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.0637,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1128,
+      "AX2": 0.0722,
+      "AX3": 0.3571,
+      "AX4": 0.0729,
+      "AX5": 0.385
+    }
+  },
+  "K000000845": {
+    "job_name": "스포츠트레이너",
+    "cluster_id": "C6",
+    "silhouette": 0.2518,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0708,
+      "AX2": 0.0331,
+      "AX3": 0.1045,
+      "AX4": 0.2822,
+      "AX5": 0.5094
+    }
+  },
+  "K000000846": {
+    "job_name": "장례지도사 및 장례상담원",
+    "cluster_id": "C6",
+    "silhouette": 0.221,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.048,
+      "AX2": 0.053,
+      "AX3": 0.0706,
+      "AX4": 0.0529,
+      "AX5": 0.7755
+    }
+  },
+  "K000000847": {
+    "job_name": "기업고위임원",
+    "cluster_id": "C7",
+    "silhouette": 0.2958,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0252,
+      "AX2": 0.015,
+      "AX3": 0.1475,
+      "AX4": 0.7752,
+      "AX5": 0.0371
+    }
+  },
+  "K000000848": {
+    "job_name": "재봉사",
+    "cluster_id": "C3",
+    "silhouette": 0.177,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1987,
+      "AX2": 0.2013,
+      "AX3": 0.1367,
+      "AX4": 0.276,
+      "AX5": 0.1873
+    }
+  },
+  "K000000849": {
+    "job_name": "보조교사",
+    "cluster_id": "C4",
+    "silhouette": 0.0532,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3348,
+      "AX2": 0.1555,
+      "AX3": 0.1859,
+      "AX4": 0.1296,
+      "AX5": 0.1942
+    }
+  },
+  "K000000850": {
+    "job_name": "요양보호사 및 간병인",
+    "cluster_id": "C5",
+    "silhouette": 0.009,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.025,
+      "AX2": 0.0287,
+      "AX3": 0.0311,
+      "AX4": 0.0338,
+      "AX5": 0.8814
+    }
+  },
+  "K000000851": {
+    "job_name": "지휘자",
+    "cluster_id": "C8",
+    "silhouette": 0.0385,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0036,
+      "AX2": 0.0039,
+      "AX3": 0.0674,
+      "AX4": 0.8748,
+      "AX5": 0.0504
+    }
+  },
+  "K000000852": {
+    "job_name": "생명과학시험원",
+    "cluster_id": "C1",
+    "silhouette": 0.2259,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.4989,
+      "AX2": 0.2265,
+      "AX3": 0.0653,
+      "AX4": 0.1899,
+      "AX5": 0.0194
+    }
+  },
+  "K000000853": {
+    "job_name": "시스템소프트웨어개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.1978,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3371,
+      "AX2": 0.0522,
+      "AX3": 0.4477,
+      "AX4": 0.1226,
+      "AX5": 0.0404
+    }
+  },
+  "K000000854": {
+    "job_name": "주차관리·안내원",
+    "cluster_id": "C3",
+    "silhouette": 0.1397,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0806,
+      "AX2": 0.1922,
+      "AX3": 0.0707,
+      "AX4": 0.0875,
+      "AX5": 0.569
+    }
+  },
+  "K000000855": {
+    "job_name": "물류사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.1757,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4794,
+      "AX2": 0.1443,
+      "AX3": 0.1515,
+      "AX4": 0.124,
+      "AX5": 0.1008
+    }
+  },
+  "K000000856": {
+    "job_name": "컴퓨터시스템설계 및 분석가",
+    "cluster_id": "C4",
+    "silhouette": 0.2006,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2629,
+      "AX2": 0.1837,
+      "AX3": 0.2503,
+      "AX4": 0.2229,
+      "AX5": 0.0802
+    }
+  },
+  "K000000857": {
+    "job_name": "사회복지사",
+    "cluster_id": "C8",
+    "silhouette": 0.1869,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1891,
+      "AX2": 0.0621,
+      "AX3": 0.1085,
+      "AX4": 0.302,
+      "AX5": 0.3383
+    }
+  },
+  "K000000858": {
+    "job_name": "자동차부품조립·검사원",
+    "cluster_id": "C3",
+    "silhouette": 0.3547,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1177,
+      "AX2": 0.5001,
+      "AX3": 0.0802,
+      "AX4": 0.2134,
+      "AX5": 0.0887
+    }
+  },
+  "K000000859": {
+    "job_name": "경기심판 및 경기기록원",
+    "cluster_id": "C6",
+    "silhouette": 0.0499,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3042,
+      "AX2": 0.0892,
+      "AX3": 0.1033,
+      "AX4": 0.2807,
+      "AX5": 0.2226
+    }
+  },
+  "K000000860": {
+    "job_name": "로봇공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.2287,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1888,
+      "AX2": 0.4533,
+      "AX3": 0.1419,
+      "AX4": 0.191,
+      "AX5": 0.0249
+    }
+  },
+  "K000000861": {
+    "job_name": "제과·제빵원",
+    "cluster_id": "C6",
+    "silhouette": 0.2154,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0372,
+      "AX2": 0.1487,
+      "AX3": 0.2853,
+      "AX4": 0.0891,
+      "AX5": 0.4397
+    }
+  },
+  "K000000862": {
+    "job_name": "안과의사",
+    "cluster_id": "C6",
+    "silhouette": 0.0716,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1547,
+      "AX2": 0.1672,
+      "AX3": 0.1224,
+      "AX4": 0.1502,
+      "AX5": 0.4055
+    }
+  },
+  "K000000863": {
+    "job_name": "원자력공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.2158,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3475,
+      "AX2": 0.3092,
+      "AX3": 0.2249,
+      "AX4": 0.0832,
+      "AX5": 0.0352
+    }
+  },
+  "K000000864": {
+    "job_name": "재활공학기사",
+    "cluster_id": "C1",
+    "silhouette": 0.2097,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.094,
+      "AX2": 0.5231,
+      "AX3": 0.0925,
+      "AX4": 0.0719,
+      "AX5": 0.2185
+    }
+  },
+  "K000000865": {
+    "job_name": "석유화학공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.1615,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.387,
+      "AX2": 0.2987,
+      "AX3": 0.1842,
+      "AX4": 0.1042,
+      "AX5": 0.0258
+    }
+  },
+  "K000000866": {
+    "job_name": "출판·자료편집사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.1975,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4586,
+      "AX2": 0.1169,
+      "AX3": 0.159,
+      "AX4": 0.1487,
+      "AX5": 0.1168
+    }
+  },
+  "K000000867": {
+    "job_name": "직업운동선수",
+    "cluster_id": "C5",
+    "silhouette": 0.0905,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1544,
+      "AX2": 0.1231,
+      "AX3": 0.2354,
+      "AX4": 0.2881,
+      "AX5": 0.199
+    }
+  },
+  "K000000868": {
+    "job_name": "건설 및 채굴기계운전원",
+    "cluster_id": "C2",
+    "silhouette": 0.0147,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.026,
+      "AX2": 0.315,
+      "AX3": 0.3905,
+      "AX4": 0.1514,
+      "AX5": 0.1171
+    }
+  },
+  "K000000869": {
+    "job_name": "조림·산림경영인 및 벌목원",
+    "cluster_id": "C3",
+    "silhouette": 0.1961,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1239,
+      "AX2": 0.5394,
+      "AX3": 0.0738,
+      "AX4": 0.1375,
+      "AX5": 0.1255
+    }
+  },
+  "K000000870": {
+    "job_name": "플랜트기계공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.225,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2727,
+      "AX2": 0.5147,
+      "AX3": 0.104,
+      "AX4": 0.0934,
+      "AX5": 0.0153
+    }
+  },
+  "K000000871": {
+    "job_name": "일반기계조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.3446,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0857,
+      "AX2": 0.6657,
+      "AX3": 0.1101,
+      "AX4": 0.0863,
+      "AX5": 0.0522
+    }
+  },
+  "K000000872": {
+    "job_name": "광고·홍보·마케팅전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.1219,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.151,
+      "AX2": 0.0928,
+      "AX3": 0.2526,
+      "AX4": 0.1476,
+      "AX5": 0.3561
+    }
+  },
+  "K000000873": {
+    "job_name": "음향·녹음기사",
+    "cluster_id": "C4",
+    "silhouette": 0.1105,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1542,
+      "AX2": 0.2613,
+      "AX3": 0.2312,
+      "AX4": 0.2617,
+      "AX5": 0.0916
+    }
+  },
+  "K000000874": {
+    "job_name": "주유원",
+    "cluster_id": "C5",
+    "silhouette": -0.0951,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0767,
+      "AX2": 0.0872,
+      "AX3": 0.0748,
+      "AX4": 0.1281,
+      "AX5": 0.6333
+    }
+  },
+  "K000000875": {
+    "job_name": "인적자원전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.1877,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2468,
+      "AX2": 0.0343,
+      "AX3": 0.1601,
+      "AX4": 0.2281,
+      "AX5": 0.3308
+    }
+  },
+  "K000000876": {
+    "job_name": "전기감리기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.0959,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.331,
+      "AX2": 0.3944,
+      "AX3": 0.1464,
+      "AX4": 0.0864,
+      "AX5": 0.0417
+    }
+  },
+  "K000000877": {
+    "job_name": "항공공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.0734,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1434,
+      "AX2": 0.3006,
+      "AX3": 0.2014,
+      "AX4": 0.2937,
+      "AX5": 0.0608
+    }
+  },
+  "K000000878": {
+    "job_name": "도시계획·설계가",
+    "cluster_id": "C4",
+    "silhouette": 0.0974,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.413,
+      "AX2": 0.0891,
+      "AX3": 0.1634,
+      "AX4": 0.3147,
+      "AX5": 0.0198
+    }
+  },
+  "K000000879": {
+    "job_name": "디스플레이연구 및 개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.2199,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2638,
+      "AX2": 0.2374,
+      "AX3": 0.3216,
+      "AX4": 0.1283,
+      "AX5": 0.0489
+    }
+  },
+  "K000000880": {
+    "job_name": "사진인화·현상기조작원(사진수정 포함)",
+    "cluster_id": "C5",
+    "silhouette": -0.0168,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0872,
+      "AX2": 0.4039,
+      "AX3": 0.1017,
+      "AX4": 0.0319,
+      "AX5": 0.3754
+    }
+  },
+  "K000000881": {
+    "job_name": "공연·영화 및 음반기획자",
+    "cluster_id": "C6",
+    "silhouette": -0.0404,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1281,
+      "AX2": 0.1105,
+      "AX3": 0.3636,
+      "AX4": 0.3025,
+      "AX5": 0.0954
+    }
+  },
+  "K000000882": {
+    "job_name": "귀금속·보석세공원",
+    "cluster_id": "C4",
+    "silhouette": 0.0146,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1531,
+      "AX2": 0.2892,
+      "AX3": 0.2422,
+      "AX4": 0.1209,
+      "AX5": 0.1946
+    }
+  },
+  "K000000883": {
+    "job_name": "학습지·교육교구방문강사",
+    "cluster_id": "C7",
+    "silhouette": 0.118,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0486,
+      "AX2": 0.0343,
+      "AX3": 0.1289,
+      "AX4": 0.1737,
+      "AX5": 0.6145
+    }
+  },
+  "K000000884": {
+    "job_name": "선박갑판원",
+    "cluster_id": "C3",
+    "silhouette": 0.377,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0999,
+      "AX2": 0.415,
+      "AX3": 0.2183,
+      "AX4": 0.1377,
+      "AX5": 0.129
+    }
+  },
+  "K000000885": {
+    "job_name": "승강기설치·정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.2661,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1142,
+      "AX2": 0.6989,
+      "AX3": 0.0597,
+      "AX4": 0.0652,
+      "AX5": 0.062
+    }
+  },
+  "K000000886": {
+    "job_name": "냉동·냉장·공조기설치·정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.1189,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1114,
+      "AX2": 0.3629,
+      "AX3": 0.261,
+      "AX4": 0.1638,
+      "AX5": 0.1009
+    }
+  },
+  "K000000887": {
+    "job_name": "수질환경기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.1076,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6359,
+      "AX2": 0.1555,
+      "AX3": 0.123,
+      "AX4": 0.0629,
+      "AX5": 0.0226
+    }
+  },
+  "K000000888": {
+    "job_name": "지적 및 측량기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.2407,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2405,
+      "AX2": 0.2385,
+      "AX3": 0.1628,
+      "AX4": 0.2841,
+      "AX5": 0.0742
+    }
+  },
+  "K000000889": {
+    "job_name": "외과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.1593,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2154,
+      "AX2": 0.1502,
+      "AX3": 0.1969,
+      "AX4": 0.2154,
+      "AX5": 0.2221
+    }
+  },
+  "K000000890": {
+    "job_name": "UX·UI디자이너",
+    "cluster_id": "C8",
+    "silhouette": -0.0047,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2489,
+      "AX2": 0.0895,
+      "AX3": 0.43,
+      "AX4": 0.2038,
+      "AX5": 0.0277
+    }
+  },
+  "K000000891": {
+    "job_name": "교통계획·설계가",
+    "cluster_id": "C4",
+    "silhouette": 0.2883,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4442,
+      "AX2": 0.2254,
+      "AX3": 0.1847,
+      "AX4": 0.0898,
+      "AX5": 0.0559
+    }
+  },
+  "K000000892": {
+    "job_name": "성형외과의사",
+    "cluster_id": "C7",
+    "silhouette": 0.0906,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1024,
+      "AX2": 0.2301,
+      "AX3": 0.1801,
+      "AX4": 0.1947,
+      "AX5": 0.2928
+    }
+  },
+  "K000000893": {
+    "job_name": "음료조리사",
+    "cluster_id": "C5",
+    "silhouette": 0.1165,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0136,
+      "AX2": 0.0686,
+      "AX3": 0.0213,
+      "AX4": 0.0472,
+      "AX5": 0.8493
+    }
+  },
+  "K000000894": {
+    "job_name": "악기제조원 및 조율사",
+    "cluster_id": "C2",
+    "silhouette": 0.1844,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1268,
+      "AX2": 0.3872,
+      "AX3": 0.2394,
+      "AX4": 0.0286,
+      "AX5": 0.218
+    }
+  },
+  "K000000895": {
+    "job_name": "건설·채굴관리자",
+    "cluster_id": "C1",
+    "silhouette": 0.1264,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0341,
+      "AX2": 0.1035,
+      "AX3": 0.1008,
+      "AX4": 0.6612,
+      "AX5": 0.1005
+    }
+  },
+  "K000000896": {
+    "job_name": "점화·발파·화약관리원",
+    "cluster_id": "C2",
+    "silhouette": 0.1826,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1613,
+      "AX2": 0.4988,
+      "AX3": 0.2455,
+      "AX4": 0.0794,
+      "AX5": 0.0151
+    }
+  },
+  "K000000897": {
+    "job_name": "철골공(강구조물건립원)",
+    "cluster_id": "C2",
+    "silhouette": 0.2959,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0497,
+      "AX2": 0.3651,
+      "AX3": 0.1145,
+      "AX4": 0.4094,
+      "AX5": 0.0613
+    }
+  },
+  "K000000898": {
+    "job_name": "경제학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.0493,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5425,
+      "AX2": 0.0779,
+      "AX3": 0.1727,
+      "AX4": 0.1756,
+      "AX5": 0.0313
+    }
+  },
+  "K000000899": {
+    "job_name": "영화배우 및 탤런트",
+    "cluster_id": "C5",
+    "silhouette": 0.1032,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0552,
+      "AX2": 0.0828,
+      "AX3": 0.5563,
+      "AX4": 0.0902,
+      "AX5": 0.2155
+    }
+  },
+  "K000000900": {
+    "job_name": "통신망운영기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1954,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2854,
+      "AX2": 0.2857,
+      "AX3": 0.2464,
+      "AX4": 0.135,
+      "AX5": 0.0475
+    }
+  },
+  "K000000901": {
+    "job_name": "연극 및 뮤지컬배우",
+    "cluster_id": "C8",
+    "silhouette": 0.0419,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0077,
+      "AX2": 0.0121,
+      "AX3": 0.103,
+      "AX4": 0.2865,
+      "AX5": 0.5907
+    }
+  },
+  "K000000902": {
+    "job_name": "낙농종사원",
+    "cluster_id": "C2",
+    "silhouette": 0.0547,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1477,
+      "AX2": 0.1317,
+      "AX3": 0.1701,
+      "AX4": 0.3938,
+      "AX5": 0.1568
+    }
+  },
+  "K000000903": {
+    "job_name": "천문 및 기상학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2241,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5743,
+      "AX2": 0.288,
+      "AX3": 0.0891,
+      "AX4": 0.0335,
+      "AX5": 0.0151
+    }
+  },
+  "K000000904": {
+    "job_name": "숙박시설서비스원",
+    "cluster_id": "C6",
+    "silhouette": 0.1655,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0282,
+      "AX2": 0.022,
+      "AX3": 0.0426,
+      "AX4": 0.0842,
+      "AX5": 0.823
+    }
+  },
+  "K000000905": {
+    "job_name": "음료제조기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.2676,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1243,
+      "AX2": 0.4491,
+      "AX3": 0.0649,
+      "AX4": 0.2418,
+      "AX5": 0.1199
+    }
+  },
+  "K000000906": {
+    "job_name": "대학교수",
+    "cluster_id": "C8",
+    "silhouette": 0.185,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3792,
+      "AX2": 0.1281,
+      "AX3": 0.2207,
+      "AX4": 0.2071,
+      "AX5": 0.065
+    }
+  },
+  "K000000907": {
+    "job_name": "채소·특용작물재배원",
+    "cluster_id": "C2",
+    "silhouette": 0.1324,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0356,
+      "AX2": 0.2225,
+      "AX3": 0.1298,
+      "AX4": 0.3816,
+      "AX5": 0.2305
+    }
+  },
+  "K000000908": {
+    "job_name": "보험인수심사원(언더라이터)",
+    "cluster_id": "C8",
+    "silhouette": 0.0204,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4683,
+      "AX2": 0.0622,
+      "AX3": 0.1519,
+      "AX4": 0.1771,
+      "AX5": 0.1404
+    }
+  },
+  "K000000909": {
+    "job_name": "선박조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.3244,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0749,
+      "AX2": 0.7867,
+      "AX3": 0.0265,
+      "AX4": 0.0579,
+      "AX5": 0.054
+    }
+  },
+  "K000000910": {
+    "job_name": "경찰·소방·교도관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.0566,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1586,
+      "AX2": 0.0858,
+      "AX3": 0.0864,
+      "AX4": 0.4709,
+      "AX5": 0.1982
+    }
+  },
+  "K000000911": {
+    "job_name": "예능강사",
+    "cluster_id": "C8",
+    "silhouette": 0.0156,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.037,
+      "AX2": 0.0572,
+      "AX3": 0.3384,
+      "AX4": 0.1063,
+      "AX5": 0.461
+    }
+  },
+  "K000000912": {
+    "job_name": "중고등학교 교장 및 교감",
+    "cluster_id": "C7",
+    "silhouette": 0.127,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0683,
+      "AX2": 0.0248,
+      "AX3": 0.1935,
+      "AX4": 0.6154,
+      "AX5": 0.098
+    }
+  },
+  "K000000913": {
+    "job_name": "홀서빙원",
+    "cluster_id": "C5",
+    "silhouette": 0.1649,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0037,
+      "AX2": 0.0111,
+      "AX3": 0.0092,
+      "AX4": 0.0191,
+      "AX5": 0.9569
+    }
+  },
+  "K000000914": {
+    "job_name": "헬리콥터정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.1296,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0612,
+      "AX2": 0.3209,
+      "AX3": 0.0231,
+      "AX4": 0.5863,
+      "AX5": 0.0085
+    }
+  },
+  "K000000915": {
+    "job_name": "건축감리기술자",
+    "cluster_id": "C8",
+    "silhouette": 0.0367,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1832,
+      "AX2": 0.1131,
+      "AX3": 0.3199,
+      "AX4": 0.2785,
+      "AX5": 0.1053
+    }
+  },
+  "K000000916": {
+    "job_name": "상·하수도처리장치조작원",
+    "cluster_id": "C1",
+    "silhouette": 0.1271,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1156,
+      "AX2": 0.1936,
+      "AX3": 0.1881,
+      "AX4": 0.3403,
+      "AX5": 0.1625
+    }
+  },
+  "K000000917": {
+    "job_name": "전자부품·제품생산기계조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.2048,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1571,
+      "AX2": 0.5358,
+      "AX3": 0.1635,
+      "AX4": 0.0778,
+      "AX5": 0.0658
+    }
+  },
+  "K000000918": {
+    "job_name": "무역사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1867,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5294,
+      "AX2": 0.093,
+      "AX3": 0.1988,
+      "AX4": 0.0773,
+      "AX5": 0.1015
+    }
+  },
+  "K000000919": {
+    "job_name": "마케팅·광고·홍보관리자",
+    "cluster_id": "C8",
+    "silhouette": 0.2445,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1834,
+      "AX2": 0.0803,
+      "AX3": 0.2768,
+      "AX4": 0.3599,
+      "AX5": 0.0995
+    }
+  },
+  "K000000920": {
+    "job_name": "토양환경기술자 및 연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.1213,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3921,
+      "AX2": 0.2861,
+      "AX3": 0.123,
+      "AX4": 0.1647,
+      "AX5": 0.0342
+    }
+  },
+  "K000000921": {
+    "job_name": "선박교통관제사",
+    "cluster_id": "C4",
+    "silhouette": 0.0705,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5198,
+      "AX2": 0.311,
+      "AX3": 0.0898,
+      "AX4": 0.0554,
+      "AX5": 0.024
+    }
+  },
+  "K000000922": {
+    "job_name": "건축설비기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.3089,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2443,
+      "AX2": 0.2389,
+      "AX3": 0.3028,
+      "AX4": 0.1431,
+      "AX5": 0.0709
+    }
+  },
+  "K000000923": {
+    "job_name": "단열공",
+    "cluster_id": "C2",
+    "silhouette": 0.1229,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0191,
+      "AX2": 0.1933,
+      "AX3": 0.1541,
+      "AX4": 0.4698,
+      "AX5": 0.1637
+    }
+  },
+  "K000000924": {
+    "job_name": "통신기기·장비기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.0133,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.322,
+      "AX2": 0.2586,
+      "AX3": 0.2347,
+      "AX4": 0.1446,
+      "AX5": 0.04
+    }
+  },
+  "K000000925": {
+    "job_name": "정부·공공행정전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.2246,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3299,
+      "AX2": 0.0462,
+      "AX3": 0.0819,
+      "AX4": 0.5077,
+      "AX5": 0.0343
+    }
+  },
+  "K000000926": {
+    "job_name": "어부 및 해녀",
+    "cluster_id": "C5",
+    "silhouette": 0.0325,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0366,
+      "AX2": 0.2615,
+      "AX3": 0.1267,
+      "AX4": 0.0444,
+      "AX5": 0.5308
+    }
+  },
+  "K000000927": {
+    "job_name": "전기부품·제품생산기계조작원",
+    "cluster_id": "C2",
+    "silhouette": -0.0433,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1677,
+      "AX2": 0.2212,
+      "AX3": 0.1045,
+      "AX4": 0.4301,
+      "AX5": 0.0765
+    }
+  },
+  "K000000928": {
+    "job_name": "정신과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.2055,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0855,
+      "AX2": 0.0559,
+      "AX3": 0.0892,
+      "AX4": 0.0689,
+      "AX5": 0.7005
+    }
+  },
+  "K000000929": {
+    "job_name": "수상운송사무원",
+    "cluster_id": "C6",
+    "silhouette": -0.0478,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4572,
+      "AX2": 0.0695,
+      "AX3": 0.1283,
+      "AX4": 0.1637,
+      "AX5": 0.1813
+    }
+  },
+  "K000000930": {
+    "job_name": "제품광고영업원",
+    "cluster_id": "C6",
+    "silhouette": 0.0433,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0381,
+      "AX2": 0.0098,
+      "AX3": 0.0645,
+      "AX4": 0.0546,
+      "AX5": 0.833
+    }
+  },
+  "K000000931": {
+    "job_name": "보건·의료관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.3378,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0845,
+      "AX2": 0.0311,
+      "AX3": 0.1582,
+      "AX4": 0.4676,
+      "AX5": 0.2587
+    }
+  },
+  "K000000932": {
+    "job_name": "유리부착원",
+    "cluster_id": "C3",
+    "silhouette": 0.077,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0283,
+      "AX2": 0.55,
+      "AX3": 0.1151,
+      "AX4": 0.1448,
+      "AX5": 0.1619
+    }
+  },
+  "K000000933": {
+    "job_name": "행정부고위공무원",
+    "cluster_id": "C7",
+    "silhouette": 0.1789,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0342,
+      "AX2": 0.0149,
+      "AX3": 0.1528,
+      "AX4": 0.7814,
+      "AX5": 0.0167
+    }
+  },
+  "K000000934": {
+    "job_name": "화학공학시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.1428,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4577,
+      "AX2": 0.3737,
+      "AX3": 0.1215,
+      "AX4": 0.0355,
+      "AX5": 0.0117
+    }
+  },
+  "K000000935": {
+    "job_name": "가축사육종사원",
+    "cluster_id": "C3",
+    "silhouette": 0.2073,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1038,
+      "AX2": 0.1815,
+      "AX3": 0.1726,
+      "AX4": 0.3961,
+      "AX5": 0.146
+    }
+  },
+  "K000000936": {
+    "job_name": "통신기술개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.2746,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3708,
+      "AX2": 0.1925,
+      "AX3": 0.2519,
+      "AX4": 0.1642,
+      "AX5": 0.0206
+    }
+  },
+  "K000000937": {
+    "job_name": "신문기자",
+    "cluster_id": "C8",
+    "silhouette": 0.2053,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5327,
+      "AX2": 0.0857,
+      "AX3": 0.167,
+      "AX4": 0.1157,
+      "AX5": 0.0989
+    }
+  },
+  "K000000938": {
+    "job_name": "대기환경기술자 및 연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.0732,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.4998,
+      "AX2": 0.2571,
+      "AX3": 0.1444,
+      "AX4": 0.0792,
+      "AX5": 0.0196
+    }
+  },
+  "K000000939": {
+    "job_name": "가정의학과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.1854,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0783,
+      "AX2": 0.0588,
+      "AX3": 0.1059,
+      "AX4": 0.1217,
+      "AX5": 0.6353
+    }
+  },
+  "K000000940": {
+    "job_name": "건축시공기술자 및 견적원",
+    "cluster_id": "C1",
+    "silhouette": 0.0745,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1467,
+      "AX2": 0.1841,
+      "AX3": 0.2419,
+      "AX4": 0.2711,
+      "AX5": 0.1562
+    }
+  },
+  "K000000941": {
+    "job_name": "철도·전동차기관사",
+    "cluster_id": "C2",
+    "silhouette": 0.1778,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2179,
+      "AX2": 0.1547,
+      "AX3": 0.1504,
+      "AX4": 0.2966,
+      "AX5": 0.1804
+    }
+  },
+  "K000000942": {
+    "job_name": "재료(금속)공학기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.1415,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2523,
+      "AX2": 0.2497,
+      "AX3": 0.3489,
+      "AX4": 0.1024,
+      "AX5": 0.0467
+    }
+  },
+  "K000000943": {
+    "job_name": "종이제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.1733,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1039,
+      "AX2": 0.3827,
+      "AX3": 0.1635,
+      "AX4": 0.1946,
+      "AX5": 0.1554
+    }
+  },
+  "K000000944": {
+    "job_name": "경영·진단전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.0557,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2378,
+      "AX2": 0.0604,
+      "AX3": 0.3298,
+      "AX4": 0.3042,
+      "AX5": 0.0678
+    }
+  },
+  "K000000945": {
+    "job_name": "금속가공기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3439,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0699,
+      "AX2": 0.7215,
+      "AX3": 0.0776,
+      "AX4": 0.0741,
+      "AX5": 0.0571
+    }
+  },
+  "K000000946": {
+    "job_name": "도료 및 농약품화학공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2821,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4149,
+      "AX2": 0.3066,
+      "AX3": 0.1253,
+      "AX4": 0.1138,
+      "AX5": 0.0394
+    }
+  },
+  "K000000947": {
+    "job_name": "문리학원강사",
+    "cluster_id": "C8",
+    "silhouette": 0.186,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1392,
+      "AX2": 0.0521,
+      "AX3": 0.2268,
+      "AX4": 0.3246,
+      "AX5": 0.2574
+    }
+  },
+  "K000000948": {
+    "job_name": "소아청소년과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.1293,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2201,
+      "AX2": 0.0672,
+      "AX3": 0.1034,
+      "AX4": 0.1311,
+      "AX5": 0.4782
+    }
+  },
+  "K000000949": {
+    "job_name": "철학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.0649,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3762,
+      "AX2": 0.1766,
+      "AX3": 0.1962,
+      "AX4": 0.0814,
+      "AX5": 0.1696
+    }
+  },
+  "K000000950": {
+    "job_name": "음식서비스관리자",
+    "cluster_id": "C6",
+    "silhouette": 0.1164,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0126,
+      "AX2": 0.0321,
+      "AX3": 0.0692,
+      "AX4": 0.2242,
+      "AX5": 0.6619
+    }
+  },
+  "K000000951": {
+    "job_name": "모델",
+    "cluster_id": "C6",
+    "silhouette": 0.1136,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0016,
+      "AX2": 0.0195,
+      "AX3": 0.309,
+      "AX4": 0.119,
+      "AX5": 0.5509
+    }
+  },
+  "K000000952": {
+    "job_name": "매장계산원 및 요금정산원",
+    "cluster_id": "C5",
+    "silhouette": 0.2096,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0395,
+      "AX2": 0.0337,
+      "AX3": 0.0175,
+      "AX4": 0.0759,
+      "AX5": 0.8333
+    }
+  },
+  "K000000953": {
+    "job_name": "소방공학기술자 및 연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.0586,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1914,
+      "AX2": 0.3561,
+      "AX3": 0.0837,
+      "AX4": 0.2144,
+      "AX5": 0.1544
+    }
+  },
+  "K000000954": {
+    "job_name": "하역·적재종사원",
+    "cluster_id": "C3",
+    "silhouette": 0.3121,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1383,
+      "AX2": 0.1911,
+      "AX3": 0.1857,
+      "AX4": 0.2833,
+      "AX5": 0.2016
+    }
+  },
+  "K000000955": {
+    "job_name": "행사기획자",
+    "cluster_id": "C7",
+    "silhouette": 0.2886,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0227,
+      "AX2": 0.0657,
+      "AX3": 0.2107,
+      "AX4": 0.6017,
+      "AX5": 0.0993
+    }
+  },
+  "K000000956": {
+    "job_name": "건축구조기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1416,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2396,
+      "AX2": 0.162,
+      "AX3": 0.1342,
+      "AX4": 0.4173,
+      "AX5": 0.047
+    }
+  },
+  "K000000957": {
+    "job_name": "스포츠강사",
+    "cluster_id": "C6",
+    "silhouette": 0.2419,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0163,
+      "AX2": 0.0323,
+      "AX3": 0.0372,
+      "AX4": 0.1333,
+      "AX5": 0.781
+    }
+  },
+  "K000000958": {
+    "job_name": "방송장비설치·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.2518,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0773,
+      "AX2": 0.3489,
+      "AX3": 0.1158,
+      "AX4": 0.3344,
+      "AX5": 0.1236
+    }
+  },
+  "K000000959": {
+    "job_name": "축산학 및 수의학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.1634,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4262,
+      "AX2": 0.2169,
+      "AX3": 0.1247,
+      "AX4": 0.1528,
+      "AX5": 0.0795
+    }
+  },
+  "K000000960": {
+    "job_name": "화학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.0248,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2395,
+      "AX2": 0.0865,
+      "AX3": 0.0385,
+      "AX4": 0.6278,
+      "AX5": 0.0076
+    }
+  },
+  "K000000961": {
+    "job_name": "사무용 전자기기설치·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.0817,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1503,
+      "AX2": 0.2613,
+      "AX3": 0.2003,
+      "AX4": 0.1835,
+      "AX5": 0.2046
+    }
+  },
+  "K000000962": {
+    "job_name": "도금·금속분무기조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.3034,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1665,
+      "AX2": 0.3377,
+      "AX3": 0.2415,
+      "AX4": 0.1704,
+      "AX5": 0.0838
+    }
+  },
+  "K000000963": {
+    "job_name": "컴퓨터설치·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.1643,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1225,
+      "AX2": 0.2192,
+      "AX3": 0.1437,
+      "AX4": 0.1246,
+      "AX5": 0.39
+    }
+  },
+  "K000000964": {
+    "job_name": "건설배관공",
+    "cluster_id": "C3",
+    "silhouette": 0.2329,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0574,
+      "AX2": 0.5831,
+      "AX3": 0.094,
+      "AX4": 0.1673,
+      "AX5": 0.0982
+    }
+  },
+  "K000000965": {
+    "job_name": "의복·가죽·모피수선원",
+    "cluster_id": "C5",
+    "silhouette": 0.0717,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0355,
+      "AX2": 0.0704,
+      "AX3": 0.2113,
+      "AX4": 0.0224,
+      "AX5": 0.6604
+    }
+  },
+  "K000000966": {
+    "job_name": "잡지기자",
+    "cluster_id": "C8",
+    "silhouette": 0.086,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4578,
+      "AX2": 0.1699,
+      "AX3": 0.1535,
+      "AX4": 0.0462,
+      "AX5": 0.1726
+    }
+  },
+  "K000000967": {
+    "job_name": "기술·기능계강사",
+    "cluster_id": "C7",
+    "silhouette": 0.0537,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0808,
+      "AX2": 0.2214,
+      "AX3": 0.1096,
+      "AX4": 0.1556,
+      "AX5": 0.4326
+    }
+  },
+  "K000000968": {
+    "job_name": "네트워크시스템개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.144,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.447,
+      "AX2": 0.1847,
+      "AX3": 0.2093,
+      "AX4": 0.1248,
+      "AX5": 0.0341
+    }
+  },
+  "K000000969": {
+    "job_name": "예술·디자인·방송관리자",
+    "cluster_id": "C8",
+    "silhouette": 0.1507,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2364,
+      "AX2": 0.0642,
+      "AX3": 0.3713,
+      "AX4": 0.233,
+      "AX5": 0.0951
+    }
+  },
+  "K000000970": {
+    "job_name": "식품공학시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.2659,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4508,
+      "AX2": 0.2955,
+      "AX3": 0.1158,
+      "AX4": 0.0956,
+      "AX5": 0.0423
+    }
+  },
+  "K000000971": {
+    "job_name": "가구조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.3022,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0852,
+      "AX2": 0.4183,
+      "AX3": 0.1254,
+      "AX4": 0.2165,
+      "AX5": 0.1546
+    }
+  },
+  "K000000972": {
+    "job_name": "네일아티스트",
+    "cluster_id": "C5",
+    "silhouette": 0.1,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0083,
+      "AX2": 0.0356,
+      "AX3": 0.0666,
+      "AX4": 0.0104,
+      "AX5": 0.8792
+    }
+  },
+  "K000000973": {
+    "job_name": "임학 및 산림학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.3076,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5071,
+      "AX2": 0.2747,
+      "AX3": 0.1216,
+      "AX4": 0.0846,
+      "AX5": 0.012
+    }
+  },
+  "K000000974": {
+    "job_name": "선장 및 항해사",
+    "cluster_id": "C1",
+    "silhouette": 0.1089,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1091,
+      "AX2": 0.0793,
+      "AX3": 0.0678,
+      "AX4": 0.5366,
+      "AX5": 0.2072
+    }
+  },
+  "K000000975": {
+    "job_name": "발전설비기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.088,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3388,
+      "AX2": 0.3788,
+      "AX3": 0.1902,
+      "AX4": 0.076,
+      "AX5": 0.0163
+    }
+  },
+  "K000000976": {
+    "job_name": "선박정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.1993,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0607,
+      "AX2": 0.7313,
+      "AX3": 0.0845,
+      "AX4": 0.1046,
+      "AX5": 0.0189
+    }
+  },
+  "K000000977": {
+    "job_name": "보험대리인 및 중개인",
+    "cluster_id": "C8",
+    "silhouette": 0.1855,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.165,
+      "AX2": 0.0237,
+      "AX3": 0.1062,
+      "AX4": 0.0492,
+      "AX5": 0.6559
+    }
+  },
+  "K000000978": {
+    "job_name": "IT기술지원전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.1129,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3027,
+      "AX2": 0.1376,
+      "AX3": 0.178,
+      "AX4": 0.1557,
+      "AX5": 0.226
+    }
+  },
+  "K000000979": {
+    "job_name": "오락시설서비스원",
+    "cluster_id": "C5",
+    "silhouette": -0.0196,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0952,
+      "AX2": 0.1464,
+      "AX3": 0.0782,
+      "AX4": 0.1121,
+      "AX5": 0.5682
+    }
+  },
+  "K000000981": {
+    "job_name": "레크리에이션전문가",
+    "cluster_id": "C6",
+    "silhouette": 0.0787,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0085,
+      "AX2": 0.0218,
+      "AX3": 0.1954,
+      "AX4": 0.0236,
+      "AX5": 0.7507
+    }
+  },
+  "K000000982": {
+    "job_name": "패스트푸드준비원",
+    "cluster_id": "C5",
+    "silhouette": 0.0541,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0497,
+      "AX2": 0.0277,
+      "AX3": 0.1145,
+      "AX4": 0.1127,
+      "AX5": 0.6955
+    }
+  },
+  "K000000983": {
+    "job_name": "잠수기능원",
+    "cluster_id": "C2",
+    "silhouette": 0.1917,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0791,
+      "AX2": 0.7387,
+      "AX3": 0.0536,
+      "AX4": 0.0792,
+      "AX5": 0.0494
+    }
+  },
+  "K000000984": {
+    "job_name": "전자제품 및 부품 개발기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.0434,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3112,
+      "AX2": 0.2069,
+      "AX3": 0.3293,
+      "AX4": 0.1202,
+      "AX5": 0.0324
+    }
+  },
+  "K000000985": {
+    "job_name": "조경기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1101,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1543,
+      "AX2": 0.1577,
+      "AX3": 0.4113,
+      "AX4": 0.1385,
+      "AX5": 0.1382
+    }
+  },
+  "K000000986": {
+    "job_name": "화학제품생산기계조작원(고무·플라스틱 제외)",
+    "cluster_id": "C2",
+    "silhouette": 0.2259,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3553,
+      "AX2": 0.2008,
+      "AX3": 0.1455,
+      "AX4": 0.227,
+      "AX5": 0.0714
+    }
+  },
+  "K000000987": {
+    "job_name": "자산운용가",
+    "cluster_id": "C8",
+    "silhouette": 0.3007,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4922,
+      "AX2": 0.0497,
+      "AX3": 0.1935,
+      "AX4": 0.1149,
+      "AX5": 0.1497
+    }
+  },
+  "K000000988": {
+    "job_name": "인쇄기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.1351,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1769,
+      "AX2": 0.282,
+      "AX3": 0.1613,
+      "AX4": 0.1866,
+      "AX5": 0.1932
+    }
+  },
+  "K000000989": {
+    "job_name": "환경∙청소∙경비 관련 관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.0944,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0142,
+      "AX2": 0.0263,
+      "AX3": 0.0394,
+      "AX4": 0.8338,
+      "AX5": 0.0862
+    }
+  },
+  "K000000990": {
+    "job_name": "대학교 총장 및 대학학장",
+    "cluster_id": "C8",
+    "silhouette": 0.0254,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0386,
+      "AX2": 0.0083,
+      "AX3": 0.0735,
+      "AX4": 0.8207,
+      "AX5": 0.0589
+    }
+  },
+  "K000000991": {
+    "job_name": "여행·호텔관리자",
+    "cluster_id": "C8",
+    "silhouette": 0.1702,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0832,
+      "AX2": 0.026,
+      "AX3": 0.1502,
+      "AX4": 0.5211,
+      "AX5": 0.2195
+    }
+  },
+  "K000000992": {
+    "job_name": "토목구조설계기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1939,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3111,
+      "AX2": 0.281,
+      "AX3": 0.1834,
+      "AX4": 0.2116,
+      "AX5": 0.0129
+    }
+  },
+  "K000000993": {
+    "job_name": "약사",
+    "cluster_id": "C6",
+    "silhouette": 0.0588,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2305,
+      "AX2": 0.0436,
+      "AX3": 0.0336,
+      "AX4": 0.0255,
+      "AX5": 0.6669
+    }
+  },
+  "K000000994": {
+    "job_name": "컴퓨터하드웨어기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.1988,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6326,
+      "AX2": 0.1753,
+      "AX3": 0.166,
+      "AX4": 0.021,
+      "AX5": 0.0052
+    }
+  },
+  "K000000995": {
+    "job_name": "일반행정공무원",
+    "cluster_id": "C6",
+    "silhouette": 0.04,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.28,
+      "AX2": 0.0335,
+      "AX3": 0.0896,
+      "AX4": 0.1239,
+      "AX5": 0.473
+    }
+  },
+  "K000000996": {
+    "job_name": "가구제조·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.152,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1081,
+      "AX2": 0.3095,
+      "AX3": 0.2216,
+      "AX4": 0.2333,
+      "AX5": 0.1275
+    }
+  },
+  "K000000997": {
+    "job_name": "상품기획자",
+    "cluster_id": "C8",
+    "silhouette": 0.1075,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1631,
+      "AX2": 0.0819,
+      "AX3": 0.515,
+      "AX4": 0.1492,
+      "AX5": 0.0907
+    }
+  },
+  "K000000998": {
+    "job_name": "의약품공학기술자 및 연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.0111,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3661,
+      "AX2": 0.1825,
+      "AX3": 0.2437,
+      "AX4": 0.1795,
+      "AX5": 0.0282
+    }
+  },
+  "K000000999": {
+    "job_name": "세탁원(다림질원)",
+    "cluster_id": "C5",
+    "silhouette": -0.0673,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.053,
+      "AX2": 0.1367,
+      "AX3": 0.08,
+      "AX4": 0.0519,
+      "AX5": 0.6784
+    }
+  },
+  "K000001000": {
+    "job_name": "제품디자이너",
+    "cluster_id": "C4",
+    "silhouette": 0.1947,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1623,
+      "AX2": 0.2824,
+      "AX3": 0.3449,
+      "AX4": 0.1318,
+      "AX5": 0.0785
+    }
+  },
+  "K000001001": {
+    "job_name": "생산관리사무원",
+    "cluster_id": "C6",
+    "silhouette": 0.0307,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.301,
+      "AX2": 0.1258,
+      "AX3": 0.1565,
+      "AX4": 0.3089,
+      "AX5": 0.1078
+    }
+  },
+  "K000001002": {
+    "job_name": "항공운송사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.2574,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5386,
+      "AX2": 0.1357,
+      "AX3": 0.2465,
+      "AX4": 0.055,
+      "AX5": 0.0242
+    }
+  },
+  "K000001003": {
+    "job_name": "재활용 처리장치·소각로조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.018,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1415,
+      "AX2": 0.3758,
+      "AX3": 0.144,
+      "AX4": 0.2785,
+      "AX5": 0.0602
+    }
+  },
+  "K000001004": {
+    "job_name": "기술영업원",
+    "cluster_id": "C1",
+    "silhouette": 0.0401,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0502,
+      "AX2": 0.0352,
+      "AX3": 0.1711,
+      "AX4": 0.0846,
+      "AX5": 0.6588
+    }
+  },
+  "K000001005": {
+    "job_name": "주입·포장·상표부착기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.121,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1278,
+      "AX2": 0.2424,
+      "AX3": 0.056,
+      "AX4": 0.3177,
+      "AX5": 0.256
+    }
+  },
+  "K000001006": {
+    "job_name": "주조원(주조기조작원)",
+    "cluster_id": "C2",
+    "silhouette": 0.2324,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0328,
+      "AX2": 0.607,
+      "AX3": 0.1033,
+      "AX4": 0.2265,
+      "AX5": 0.0305
+    }
+  },
+  "K000001007": {
+    "job_name": "사진작가 및 사진사",
+    "cluster_id": "C6",
+    "silhouette": -0.0214,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0717,
+      "AX2": 0.4599,
+      "AX3": 0.1963,
+      "AX4": 0.048,
+      "AX5": 0.2242
+    }
+  },
+  "K000001008": {
+    "job_name": "패션소품디자이너",
+    "cluster_id": "C4",
+    "silhouette": 0.0461,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1494,
+      "AX2": 0.1276,
+      "AX3": 0.3984,
+      "AX4": 0.2238,
+      "AX5": 0.1008
+    }
+  },
+  "K000001009": {
+    "job_name": "석유·천연가스제조제어장치조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.0872,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2118,
+      "AX2": 0.3877,
+      "AX3": 0.0854,
+      "AX4": 0.2291,
+      "AX5": 0.086
+    }
+  },
+  "K000001010": {
+    "job_name": "도로운송사무원",
+    "cluster_id": "C6",
+    "silhouette": -0.0068,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5246,
+      "AX2": 0.0482,
+      "AX3": 0.1192,
+      "AX4": 0.1837,
+      "AX5": 0.1242
+    }
+  },
+  "K000001011": {
+    "job_name": "수의사",
+    "cluster_id": "C6",
+    "silhouette": 0.0044,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1239,
+      "AX2": 0.127,
+      "AX3": 0.0533,
+      "AX4": 0.1356,
+      "AX5": 0.5602
+    }
+  },
+  "K000001012": {
+    "job_name": "수산학연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.2457,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2299,
+      "AX2": 0.1898,
+      "AX3": 0.2159,
+      "AX4": 0.3189,
+      "AX5": 0.0455
+    }
+  },
+  "K000001013": {
+    "job_name": "냉·난방설비조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.28,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2271,
+      "AX2": 0.3357,
+      "AX3": 0.0949,
+      "AX4": 0.2601,
+      "AX5": 0.0822
+    }
+  },
+  "K000001014": {
+    "job_name": "건축가(건축설계사)",
+    "cluster_id": "C8",
+    "silhouette": -0.0119,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1665,
+      "AX2": 0.2151,
+      "AX3": 0.2087,
+      "AX4": 0.2365,
+      "AX5": 0.1732
+    }
+  },
+  "K000001015": {
+    "job_name": "신발제조기계조작원 및 조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.381,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1314,
+      "AX2": 0.3434,
+      "AX3": 0.1221,
+      "AX4": 0.2979,
+      "AX5": 0.1052
+    }
+  },
+  "K000001016": {
+    "job_name": "곡물가공제품기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3699,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1823,
+      "AX2": 0.3945,
+      "AX3": 0.0783,
+      "AX4": 0.1812,
+      "AX5": 0.1637
+    }
+  },
+  "K000001017": {
+    "job_name": "방사선사",
+    "cluster_id": "C4",
+    "silhouette": 0.1174,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2626,
+      "AX2": 0.4128,
+      "AX3": 0.2046,
+      "AX4": 0.0372,
+      "AX5": 0.0828
+    }
+  },
+  "K000001018": {
+    "job_name": "전기·가스·수도관리자",
+    "cluster_id": "C4",
+    "silhouette": 0.1252,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.122,
+      "AX2": 0.2994,
+      "AX3": 0.1048,
+      "AX4": 0.4124,
+      "AX5": 0.0614
+    }
+  },
+  "K000001019": {
+    "job_name": "학예사",
+    "cluster_id": "C8",
+    "silhouette": 0.0551,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3124,
+      "AX2": 0.1279,
+      "AX3": 0.4123,
+      "AX4": 0.0368,
+      "AX5": 0.1105
+    }
+  },
+  "K000001020": {
+    "job_name": "간판제작·설치원",
+    "cluster_id": "C2",
+    "silhouette": 0.2337,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0943,
+      "AX2": 0.3367,
+      "AX3": 0.1994,
+      "AX4": 0.1618,
+      "AX5": 0.2078
+    }
+  },
+  "K000001021": {
+    "job_name": "지리정보시스템전문가",
+    "cluster_id": "C4",
+    "silhouette": 0.0257,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3098,
+      "AX2": 0.5714,
+      "AX3": 0.0922,
+      "AX4": 0.0221,
+      "AX5": 0.0044
+    }
+  },
+  "K000001022": {
+    "job_name": "품질관리사무원",
+    "cluster_id": "C1",
+    "silhouette": 0.1267,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2556,
+      "AX2": 0.1809,
+      "AX3": 0.1837,
+      "AX4": 0.2074,
+      "AX5": 0.1723
+    }
+  },
+  "K000001023": {
+    "job_name": "공업기계설치 및 정비원",
+    "cluster_id": "C3",
+    "silhouette": 0.2984,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2237,
+      "AX2": 0.3974,
+      "AX3": 0.0922,
+      "AX4": 0.2138,
+      "AX5": 0.0729
+    }
+  },
+  "K000001024": {
+    "job_name": "제분·도정기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3532,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1692,
+      "AX2": 0.3635,
+      "AX3": 0.1601,
+      "AX4": 0.1258,
+      "AX5": 0.1813
+    }
+  },
+  "K000001025": {
+    "job_name": "미디어콘텐츠창작자(크리에이터)",
+    "cluster_id": "C1",
+    "silhouette": 0.1241,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1676,
+      "AX2": 0.2591,
+      "AX3": 0.2484,
+      "AX4": 0.1166,
+      "AX5": 0.2084
+    }
+  },
+  "K000001026": {
+    "job_name": "소음진동기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.0635,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2194,
+      "AX2": 0.239,
+      "AX3": 0.2234,
+      "AX4": 0.2826,
+      "AX5": 0.0355
+    }
+  },
+  "K000001027": {
+    "job_name": "스포츠감독 및 코치",
+    "cluster_id": "C8",
+    "silhouette": 0.0315,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0372,
+      "AX2": 0.0318,
+      "AX3": 0.0881,
+      "AX4": 0.7049,
+      "AX5": 0.138
+    }
+  },
+  "K000001028": {
+    "job_name": "영업·판매관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.0156,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0867,
+      "AX2": 0.0135,
+      "AX3": 0.0389,
+      "AX4": 0.1748,
+      "AX5": 0.686
+    }
+  },
+  "K000001029": {
+    "job_name": "영화시나리오작가",
+    "cluster_id": "C8",
+    "silhouette": 0.0791,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1711,
+      "AX2": 0.315,
+      "AX3": 0.2215,
+      "AX4": 0.0936,
+      "AX5": 0.1988
+    }
+  },
+  "K000001030": {
+    "job_name": "철도기관차·전동차정비원",
+    "cluster_id": "C1",
+    "silhouette": 0.169,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.087,
+      "AX2": 0.5234,
+      "AX3": 0.239,
+      "AX4": 0.0952,
+      "AX5": 0.0555
+    }
+  },
+  "K000001031": {
+    "job_name": "보일러설치·정비원",
+    "cluster_id": "C3",
+    "silhouette": 0.2875,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1292,
+      "AX2": 0.2918,
+      "AX3": 0.0869,
+      "AX4": 0.27,
+      "AX5": 0.2221
+    }
+  },
+  "K000001032": {
+    "job_name": "정보통신관리자",
+    "cluster_id": "C8",
+    "silhouette": 0.0278,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4024,
+      "AX2": 0.0867,
+      "AX3": 0.1859,
+      "AX4": 0.2732,
+      "AX5": 0.0517
+    }
+  },
+  "K000001033": {
+    "job_name": "제화원",
+    "cluster_id": "C2",
+    "silhouette": 0.112,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0512,
+      "AX2": 0.2931,
+      "AX3": 0.2412,
+      "AX4": 0.0558,
+      "AX5": 0.3587
+    }
+  },
+  "K000001034": {
+    "job_name": "섀시조립·설치원",
+    "cluster_id": "C2",
+    "silhouette": 0.0976,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0714,
+      "AX2": 0.4082,
+      "AX3": 0.1929,
+      "AX4": 0.1491,
+      "AX5": 0.1784
+    }
+  },
+  "K000001035": {
+    "job_name": "조경원",
+    "cluster_id": "C2",
+    "silhouette": 0.0567,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1378,
+      "AX2": 0.3191,
+      "AX3": 0.3119,
+      "AX4": 0.1268,
+      "AX5": 0.1044
+    }
+  },
+  "K000001036": {
+    "job_name": "가스·에너지시험원 및 진단전문가",
+    "cluster_id": "C4",
+    "silhouette": 0.1151,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2642,
+      "AX2": 0.3352,
+      "AX3": 0.222,
+      "AX4": 0.1555,
+      "AX5": 0.023
+    }
+  },
+  "K000001037": {
+    "job_name": "유리·유리제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.2764,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2683,
+      "AX2": 0.3216,
+      "AX3": 0.1718,
+      "AX4": 0.1482,
+      "AX5": 0.0901
+    }
+  },
+  "K000001038": {
+    "job_name": "방수공",
+    "cluster_id": "C2",
+    "silhouette": 0.1241,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1058,
+      "AX2": 0.3464,
+      "AX3": 0.1642,
+      "AX4": 0.2112,
+      "AX5": 0.1725
+    }
+  },
+  "K000001039": {
+    "job_name": "통신장비설치·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.2063,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1297,
+      "AX2": 0.5566,
+      "AX3": 0.169,
+      "AX4": 0.0518,
+      "AX5": 0.0928
+    }
+  },
+  "K000001040": {
+    "job_name": "관세행정사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0396,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6198,
+      "AX2": 0.0918,
+      "AX3": 0.1428,
+      "AX4": 0.0703,
+      "AX5": 0.0754
+    }
+  },
+  "K000001041": {
+    "job_name": "방송송출장비기사",
+    "cluster_id": "C1",
+    "silhouette": 0.1406,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2781,
+      "AX2": 0.2816,
+      "AX3": 0.2028,
+      "AX4": 0.1801,
+      "AX5": 0.0574
+    }
+  },
+  "K000001042": {
+    "job_name": "모바일앱개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.2277,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3973,
+      "AX2": 0.1257,
+      "AX3": 0.3842,
+      "AX4": 0.068,
+      "AX5": 0.0247
+    }
+  },
+  "K000001043": {
+    "job_name": "농업용 및 기타기계장비설치 및 정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.0942,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0559,
+      "AX2": 0.4738,
+      "AX3": 0.0491,
+      "AX4": 0.153,
+      "AX5": 0.2683
+    }
+  },
+  "K000001044": {
+    "job_name": "바텐터",
+    "cluster_id": "C5",
+    "silhouette": 0.0717,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0043,
+      "AX2": 0.0141,
+      "AX3": 0.0099,
+      "AX4": 0.0153,
+      "AX5": 0.9564
+    }
+  },
+  "K000001045": {
+    "job_name": "과실·채소기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3401,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1275,
+      "AX2": 0.52,
+      "AX3": 0.07,
+      "AX4": 0.1803,
+      "AX5": 0.1021
+    }
+  },
+  "K000001046": {
+    "job_name": "전통건축기능원",
+    "cluster_id": "C1",
+    "silhouette": 0.2689,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0835,
+      "AX2": 0.3477,
+      "AX3": 0.1865,
+      "AX4": 0.2257,
+      "AX5": 0.1566
+    }
+  },
+  "K000001047": {
+    "job_name": "고무·플라스틱 제품 조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.4264,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2161,
+      "AX2": 0.288,
+      "AX3": 0.1157,
+      "AX4": 0.2677,
+      "AX5": 0.1125
+    }
+  },
+  "K000001048": {
+    "job_name": "생물학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.268,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5015,
+      "AX2": 0.3047,
+      "AX3": 0.1316,
+      "AX4": 0.0398,
+      "AX5": 0.0224
+    }
+  },
+  "K000001049": {
+    "job_name": "심리상담전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.0826,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1011,
+      "AX2": 0.1313,
+      "AX3": 0.0787,
+      "AX4": 0.0959,
+      "AX5": 0.593
+    }
+  },
+  "K000001050": {
+    "job_name": "상품대여원",
+    "cluster_id": "C5",
+    "silhouette": 0.2569,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0815,
+      "AX2": 0.0529,
+      "AX3": 0.0383,
+      "AX4": 0.0382,
+      "AX5": 0.7891
+    }
+  },
+  "K000001051": {
+    "job_name": "통역가",
+    "cluster_id": "C8",
+    "silhouette": 0.2649,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3454,
+      "AX2": 0.1485,
+      "AX3": 0.2846,
+      "AX4": 0.1176,
+      "AX5": 0.1039
+    }
+  },
+  "K000001052": {
+    "job_name": "사회학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.1382,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5108,
+      "AX2": 0.0998,
+      "AX3": 0.0589,
+      "AX4": 0.2257,
+      "AX5": 0.1048
+    }
+  },
+  "K000001053": {
+    "job_name": "타일·대리석시공원",
+    "cluster_id": "C3",
+    "silhouette": 0.2864,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0621,
+      "AX2": 0.3452,
+      "AX3": 0.1005,
+      "AX4": 0.2641,
+      "AX5": 0.228
+    }
+  },
+  "K000001054": {
+    "job_name": "화학물가공장치조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.0882,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2699,
+      "AX2": 0.6642,
+      "AX3": 0.0371,
+      "AX4": 0.0175,
+      "AX5": 0.0113
+    }
+  },
+  "K000001055": {
+    "job_name": "용접원(용접기조작원)",
+    "cluster_id": "C3",
+    "silhouette": 0.3176,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1007,
+      "AX2": 0.4978,
+      "AX3": 0.0502,
+      "AX4": 0.2843,
+      "AX5": 0.0669
+    }
+  },
+  "K000001056": {
+    "job_name": "양식원",
+    "cluster_id": "C2",
+    "silhouette": 0.2436,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1144,
+      "AX2": 0.1853,
+      "AX3": 0.1255,
+      "AX4": 0.3988,
+      "AX5": 0.1761
+    }
+  },
+  "K000001057": {
+    "job_name": "세탁기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3798,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2453,
+      "AX2": 0.3908,
+      "AX3": 0.1382,
+      "AX4": 0.1226,
+      "AX5": 0.1031
+    }
+  },
+  "K000001058": {
+    "job_name": "자연 및 문화해설사",
+    "cluster_id": "C8",
+    "silhouette": 0.0741,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1803,
+      "AX2": 0.2502,
+      "AX3": 0.1392,
+      "AX4": 0.0883,
+      "AX5": 0.3421
+    }
+  },
+  "K000001059": {
+    "job_name": "경영지원관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.2113,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.034,
+      "AX2": 0.0149,
+      "AX3": 0.0754,
+      "AX4": 0.8168,
+      "AX5": 0.0589
+    }
+  },
+  "K000001060": {
+    "job_name": "시각디자이너",
+    "cluster_id": "C6",
+    "silhouette": 0.0275,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1031,
+      "AX2": 0.1713,
+      "AX3": 0.1821,
+      "AX4": 0.0243,
+      "AX5": 0.5191
+    }
+  },
+  "K000001061": {
+    "job_name": "웹운영자",
+    "cluster_id": "C4",
+    "silhouette": 0.2962,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4889,
+      "AX2": 0.1434,
+      "AX3": 0.3036,
+      "AX4": 0.0407,
+      "AX5": 0.0234
+    }
+  },
+  "K000001062": {
+    "job_name": "철로설치·보수원",
+    "cluster_id": "C2",
+    "silhouette": 0.0859,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1215,
+      "AX2": 0.6255,
+      "AX3": 0.0972,
+      "AX4": 0.1388,
+      "AX5": 0.0169
+    }
+  },
+  "K000001063": {
+    "job_name": "식품공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2075,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3798,
+      "AX2": 0.4155,
+      "AX3": 0.1068,
+      "AX4": 0.0753,
+      "AX5": 0.0227
+    }
+  },
+  "K000001064": {
+    "job_name": "보건위생·환경검사원",
+    "cluster_id": "C4",
+    "silhouette": 0.1696,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3969,
+      "AX2": 0.2813,
+      "AX3": 0.1518,
+      "AX4": 0.1254,
+      "AX5": 0.0446
+    }
+  },
+  "K000001065": {
+    "job_name": "중·고등학교교사",
+    "cluster_id": "C7",
+    "silhouette": 0.1631,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1041,
+      "AX2": 0.0667,
+      "AX3": 0.2478,
+      "AX4": 0.2376,
+      "AX5": 0.3438
+    }
+  },
+  "K000001066": {
+    "job_name": "청소원",
+    "cluster_id": "C5",
+    "silhouette": 0.0876,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0671,
+      "AX2": 0.1778,
+      "AX3": 0.1889,
+      "AX4": 0.2106,
+      "AX5": 0.3556
+    }
+  },
+  "K000001067": {
+    "job_name": "토목감리기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1696,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1779,
+      "AX2": 0.1278,
+      "AX3": 0.1401,
+      "AX4": 0.521,
+      "AX5": 0.0333
+    }
+  },
+  "K000001068": {
+    "job_name": "피부과의사",
+    "cluster_id": "C7",
+    "silhouette": 0.1475,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1103,
+      "AX2": 0.0826,
+      "AX3": 0.4799,
+      "AX4": 0.1168,
+      "AX5": 0.2103
+    }
+  },
+  "K000001069": {
+    "job_name": "광고·홍보·마케팅사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.2397,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1841,
+      "AX2": 0.0609,
+      "AX3": 0.3517,
+      "AX4": 0.1917,
+      "AX5": 0.2116
+    }
+  },
+  "K000001070": {
+    "job_name": "자동차정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.0727,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0342,
+      "AX2": 0.4121,
+      "AX3": 0.1003,
+      "AX4": 0.2101,
+      "AX5": 0.2433
+    }
+  },
+  "K000001071": {
+    "job_name": "방사선과의사",
+    "cluster_id": "C7",
+    "silhouette": 0.0047,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1834,
+      "AX2": 0.2452,
+      "AX3": 0.1342,
+      "AX4": 0.1816,
+      "AX5": 0.2556
+    }
+  },
+  "K000001072": {
+    "job_name": "섬유제조기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.365,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1258,
+      "AX2": 0.6735,
+      "AX3": 0.0876,
+      "AX4": 0.0551,
+      "AX5": 0.0581
+    }
+  },
+  "K000001073": {
+    "job_name": "토목시공기술자 및 견적원",
+    "cluster_id": "C1",
+    "silhouette": 0.1264,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.4327,
+      "AX2": 0.2,
+      "AX3": 0.2575,
+      "AX4": 0.0815,
+      "AX5": 0.0283
+    }
+  },
+  "K000001074": {
+    "job_name": "통신장비기사",
+    "cluster_id": "C2",
+    "silhouette": 0.2534,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1176,
+      "AX2": 0.5907,
+      "AX3": 0.1944,
+      "AX4": 0.0648,
+      "AX5": 0.0324
+    }
+  },
+  "K000001075": {
+    "job_name": "방송·통신·인터넷케이블 설치·수리원",
+    "cluster_id": "C3",
+    "silhouette": 0.1463,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0778,
+      "AX2": 0.3143,
+      "AX3": 0.0399,
+      "AX4": 0.1232,
+      "AX5": 0.4448
+    }
+  },
+  "K000001076": {
+    "job_name": "자동조립라인·산업용 로봇조작원",
+    "cluster_id": "C1",
+    "silhouette": 0.0994,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1385,
+      "AX2": 0.5651,
+      "AX3": 0.1033,
+      "AX4": 0.1625,
+      "AX5": 0.0306
+    }
+  },
+  "K000001077": {
+    "job_name": "공예원",
+    "cluster_id": "C2",
+    "silhouette": 0.0438,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0233,
+      "AX2": 0.4393,
+      "AX3": 0.2349,
+      "AX4": 0.0369,
+      "AX5": 0.2657
+    }
+  },
+  "K000001078": {
+    "job_name": "목재가공기계조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.1536,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0488,
+      "AX2": 0.5508,
+      "AX3": 0.0979,
+      "AX4": 0.2053,
+      "AX5": 0.0972
+    }
+  },
+  "K000001079": {
+    "job_name": "경영기획사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1455,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2274,
+      "AX2": 0.0326,
+      "AX3": 0.2639,
+      "AX4": 0.4236,
+      "AX5": 0.0525
+    }
+  },
+  "K000001080": {
+    "job_name": "데이터분석가(빅데이터분석가)",
+    "cluster_id": "C4",
+    "silhouette": 0.0888,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4998,
+      "AX2": 0.2074,
+      "AX3": 0.2132,
+      "AX4": 0.0529,
+      "AX5": 0.0268
+    }
+  },
+  "K000001081": {
+    "job_name": "정부행정관리자",
+    "cluster_id": "C8",
+    "silhouette": 0.1402,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0102,
+      "AX2": 0.0101,
+      "AX3": 0.1065,
+      "AX4": 0.8693,
+      "AX5": 0.0039
+    }
+  },
+  "K000001082": {
+    "job_name": "기계‧로봇공학시험원",
+    "cluster_id": "C1",
+    "silhouette": 0.2108,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2627,
+      "AX2": 0.5518,
+      "AX3": 0.0871,
+      "AX4": 0.0719,
+      "AX5": 0.0266
+    }
+  },
+  "K000001083": {
+    "job_name": "외선전기공",
+    "cluster_id": "C2",
+    "silhouette": 0.2092,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0793,
+      "AX2": 0.6359,
+      "AX3": 0.0839,
+      "AX4": 0.1119,
+      "AX5": 0.089
+    }
+  },
+  "K000001084": {
+    "job_name": "태양광발전연구 및 개발자",
+    "cluster_id": "C1",
+    "silhouette": 0.0351,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3319,
+      "AX2": 0.2624,
+      "AX3": 0.1923,
+      "AX4": 0.1102,
+      "AX5": 0.1031
+    }
+  },
+  "K000001085": {
+    "job_name": "정보통신컨설턴트 및 감리원",
+    "cluster_id": "C1",
+    "silhouette": 0.079,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.417,
+      "AX2": 0.1698,
+      "AX3": 0.2418,
+      "AX4": 0.1575,
+      "AX5": 0.0139
+    }
+  },
+  "K000001086": {
+    "job_name": "헬리콥터조종사",
+    "cluster_id": "C2",
+    "silhouette": 0.1681,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3407,
+      "AX2": 0.5054,
+      "AX3": 0.1306,
+      "AX4": 0.0223,
+      "AX5": 0.001
+    }
+  },
+  "K000001087": {
+    "job_name": "발전·배전장치조작원",
+    "cluster_id": "C1",
+    "silhouette": 0.1874,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1658,
+      "AX2": 0.3435,
+      "AX3": 0.2353,
+      "AX4": 0.1882,
+      "AX5": 0.0672
+    }
+  },
+  "K000001088": {
+    "job_name": "언어치료사",
+    "cluster_id": "C8",
+    "silhouette": 0.1861,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0738,
+      "AX2": 0.0527,
+      "AX3": 0.0938,
+      "AX4": 0.1103,
+      "AX5": 0.6694
+    }
+  },
+  "K000001089": {
+    "job_name": "가수",
+    "cluster_id": "C6",
+    "silhouette": 0.1401,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0264,
+      "AX2": 0.0728,
+      "AX3": 0.4457,
+      "AX4": 0.0149,
+      "AX5": 0.4402
+    }
+  },
+  "K000001090": {
+    "job_name": "제도사(캐드원)",
+    "cluster_id": "C4",
+    "silhouette": 0.1043,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3522,
+      "AX2": 0.4308,
+      "AX3": 0.1514,
+      "AX4": 0.0346,
+      "AX5": 0.031
+    }
+  },
+  "K000001091": {
+    "job_name": "피부 및 체형관리사",
+    "cluster_id": "C6",
+    "silhouette": 0.1789,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0115,
+      "AX2": 0.0282,
+      "AX3": 0.1019,
+      "AX4": 0.0209,
+      "AX5": 0.8375
+    }
+  },
+  "K000001092": {
+    "job_name": "매표원 및 복권판매원",
+    "cluster_id": "C5",
+    "silhouette": 0.1649,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2127,
+      "AX2": 0.0245,
+      "AX3": 0.0899,
+      "AX4": 0.2769,
+      "AX5": 0.396
+    }
+  },
+  "K000001093": {
+    "job_name": "여행상품개발자",
+    "cluster_id": "C8",
+    "silhouette": 0.2663,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1392,
+      "AX2": 0.1009,
+      "AX3": 0.4651,
+      "AX4": 0.137,
+      "AX5": 0.1577
+    }
+  },
+  "K000001094": {
+    "job_name": "운송관리자",
+    "cluster_id": "C6",
+    "silhouette": 0.0865,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1059,
+      "AX2": 0.0243,
+      "AX3": 0.0864,
+      "AX4": 0.5713,
+      "AX5": 0.2121
+    }
+  },
+  "K000001095": {
+    "job_name": "내선전기공",
+    "cluster_id": "C2",
+    "silhouette": 0.3318,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1033,
+      "AX2": 0.3728,
+      "AX3": 0.1992,
+      "AX4": 0.1775,
+      "AX5": 0.1472
+    }
+  },
+  "K000001096": {
+    "job_name": "건설·채굴단순종사원",
+    "cluster_id": "C3",
+    "silhouette": 0.1229,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0589,
+      "AX2": 0.3043,
+      "AX3": 0.0768,
+      "AX4": 0.463,
+      "AX5": 0.0969
+    }
+  },
+  "K000001097": {
+    "job_name": "환경시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.0251,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.469,
+      "AX2": 0.2355,
+      "AX3": 0.0523,
+      "AX4": 0.2069,
+      "AX5": 0.0362
+    }
+  },
+  "K000001098": {
+    "job_name": "가전제품설치·수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.1184,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1284,
+      "AX2": 0.2826,
+      "AX3": 0.1768,
+      "AX4": 0.0625,
+      "AX5": 0.3497
+    }
+  },
+  "K000001099": {
+    "job_name": "영상·녹화 및 편집기사",
+    "cluster_id": "C4",
+    "silhouette": 0.09,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2055,
+      "AX2": 0.3304,
+      "AX3": 0.2811,
+      "AX4": 0.1183,
+      "AX5": 0.0647
+    }
+  },
+  "K000001100": {
+    "job_name": "기록물관리사",
+    "cluster_id": "C4",
+    "silhouette": 0.1484,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.8928,
+      "AX2": 0.0731,
+      "AX3": 0.0205,
+      "AX4": 0.0109,
+      "AX5": 0.0028
+    }
+  },
+  "K000001101": {
+    "job_name": "조선·해양공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.2475,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3157,
+      "AX2": 0.2641,
+      "AX3": 0.3038,
+      "AX4": 0.1042,
+      "AX5": 0.0122
+    }
+  },
+  "K000001102": {
+    "job_name": "미장공",
+    "cluster_id": "C3",
+    "silhouette": 0.1332,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0968,
+      "AX2": 0.1817,
+      "AX3": 0.2715,
+      "AX4": 0.2422,
+      "AX5": 0.2078
+    }
+  },
+  "K000001103": {
+    "job_name": "건설기계공학기술자 및 연구원",
+    "cluster_id": "C1",
+    "silhouette": 0.1214,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3054,
+      "AX2": 0.2536,
+      "AX3": 0.2277,
+      "AX4": 0.1936,
+      "AX5": 0.0197
+    }
+  },
+  "K000001104": {
+    "job_name": "신용추심원",
+    "cluster_id": "C6",
+    "silhouette": 0.0271,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5324,
+      "AX2": 0.035,
+      "AX3": 0.1709,
+      "AX4": 0.0799,
+      "AX5": 0.1819
+    }
+  },
+  "K000001105": {
+    "job_name": "식품·담배등급원",
+    "cluster_id": "C1",
+    "silhouette": 0.1092,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1706,
+      "AX2": 0.3405,
+      "AX3": 0.1671,
+      "AX4": 0.2584,
+      "AX5": 0.0634
+    }
+  },
+  "K000001106": {
+    "job_name": "웹개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.1389,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3572,
+      "AX2": 0.0977,
+      "AX3": 0.4128,
+      "AX4": 0.073,
+      "AX5": 0.0593
+    }
+  },
+  "K000001107": {
+    "job_name": "크레인 및 지게차설치 및 정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.2446,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0736,
+      "AX2": 0.4646,
+      "AX3": 0.0416,
+      "AX4": 0.1223,
+      "AX5": 0.2978
+    }
+  },
+  "K000001108": {
+    "job_name": "이비인후과의사",
+    "cluster_id": "C7",
+    "silhouette": 0.262,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0631,
+      "AX2": 0.1741,
+      "AX3": 0.1679,
+      "AX4": 0.2568,
+      "AX5": 0.3381
+    }
+  },
+  "K000001109": {
+    "job_name": "통신기기·서비스판매원",
+    "cluster_id": "C6",
+    "silhouette": 0.1655,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1315,
+      "AX2": 0.0284,
+      "AX3": 0.0469,
+      "AX4": 0.1041,
+      "AX5": 0.6891
+    }
+  },
+  "K000001110": {
+    "job_name": "국악인",
+    "cluster_id": "C6",
+    "silhouette": 0.1326,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0184,
+      "AX2": 0.0175,
+      "AX3": 0.1352,
+      "AX4": 0.4008,
+      "AX5": 0.4281
+    }
+  },
+  "K000001111": {
+    "job_name": "광원·채석원 및 석재절단원",
+    "cluster_id": "C3",
+    "silhouette": 0.3556,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1557,
+      "AX2": 0.2274,
+      "AX3": 0.1821,
+      "AX4": 0.2979,
+      "AX5": 0.1369
+    }
+  },
+  "K000001112": {
+    "job_name": "금속공작기계조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.0243,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1349,
+      "AX2": 0.3046,
+      "AX3": 0.2629,
+      "AX4": 0.2104,
+      "AX5": 0.0873
+    }
+  },
+  "K000001113": {
+    "job_name": "특수교육교사",
+    "cluster_id": "C6",
+    "silhouette": 0.1832,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.094,
+      "AX2": 0.0562,
+      "AX3": 0.149,
+      "AX4": 0.1787,
+      "AX5": 0.5221
+    }
+  },
+  "K000001114": {
+    "job_name": "증권사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0795,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1724,
+      "AX2": 0.0235,
+      "AX3": 0.4147,
+      "AX4": 0.1362,
+      "AX5": 0.2532
+    }
+  },
+  "K000001115": {
+    "job_name": "양장·양복제조원",
+    "cluster_id": "C5",
+    "silhouette": -0.044,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0549,
+      "AX2": 0.1205,
+      "AX3": 0.1693,
+      "AX4": 0.2452,
+      "AX5": 0.4101
+    }
+  },
+  "K000001116": {
+    "job_name": "만화영화작가(애니메이터)",
+    "cluster_id": "C4",
+    "silhouette": 0.0769,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2208,
+      "AX2": 0.1716,
+      "AX3": 0.5267,
+      "AX4": 0.0453,
+      "AX5": 0.0356
+    }
+  },
+  "K000001117": {
+    "job_name": "건축목공",
+    "cluster_id": "C3",
+    "silhouette": 0.2919,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0829,
+      "AX2": 0.3439,
+      "AX3": 0.1039,
+      "AX4": 0.1936,
+      "AX5": 0.2756
+    }
+  },
+  "K000001118": {
+    "job_name": "전기·전자설비조작원",
+    "cluster_id": "C2",
+    "silhouette": 0.1475,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2038,
+      "AX2": 0.2915,
+      "AX3": 0.2008,
+      "AX4": 0.1947,
+      "AX5": 0.1092
+    }
+  },
+  "K000001119": {
+    "job_name": "문화재보존원",
+    "cluster_id": "C4",
+    "silhouette": 0.1282,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2538,
+      "AX2": 0.5607,
+      "AX3": 0.0997,
+      "AX4": 0.056,
+      "AX5": 0.0298
+    }
+  },
+  "K000001120": {
+    "job_name": "교통영향평가원",
+    "cluster_id": "C1",
+    "silhouette": 0.0673,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.4532,
+      "AX2": 0.206,
+      "AX3": 0.1285,
+      "AX4": 0.1979,
+      "AX5": 0.0144
+    }
+  },
+  "K000001121": {
+    "job_name": "이동전화기수리원",
+    "cluster_id": "C2",
+    "silhouette": 0.0815,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0871,
+      "AX2": 0.4929,
+      "AX3": 0.0777,
+      "AX4": 0.0381,
+      "AX5": 0.3042
+    }
+  },
+  "K000001122": {
+    "job_name": "재단사",
+    "cluster_id": "C2",
+    "silhouette": 0.0397,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1102,
+      "AX2": 0.3307,
+      "AX3": 0.0859,
+      "AX4": 0.3725,
+      "AX5": 0.1007
+    }
+  },
+  "K000001123": {
+    "job_name": "섬유공학기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.0832,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2874,
+      "AX2": 0.3471,
+      "AX3": 0.2022,
+      "AX4": 0.1261,
+      "AX5": 0.0372
+    }
+  },
+  "K000001124": {
+    "job_name": "플라스틱제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.1065,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.129,
+      "AX2": 0.2836,
+      "AX3": 0.0917,
+      "AX4": 0.436,
+      "AX5": 0.0597
+    }
+  },
+  "K000001125": {
+    "job_name": "수학 및 통계연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2156,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.8649,
+      "AX2": 0.0277,
+      "AX3": 0.0181,
+      "AX4": 0.0784,
+      "AX5": 0.0109
+    }
+  },
+  "K000001126": {
+    "job_name": "개그맨 및 코미디언",
+    "cluster_id": "C5",
+    "silhouette": 0.2072,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0507,
+      "AX2": 0.0397,
+      "AX3": 0.0733,
+      "AX4": 0.0868,
+      "AX5": 0.7495
+    }
+  },
+  "K000001127": {
+    "job_name": "의료코디네이터",
+    "cluster_id": "C8",
+    "silhouette": 0.0808,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1163,
+      "AX2": 0.0736,
+      "AX3": 0.1244,
+      "AX4": 0.0356,
+      "AX5": 0.6502
+    }
+  },
+  "K000001128": {
+    "job_name": "상점판매원",
+    "cluster_id": "C5",
+    "silhouette": 0.0679,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0205,
+      "AX2": 0.0147,
+      "AX3": 0.0188,
+      "AX4": 0.0274,
+      "AX5": 0.9187
+    }
+  },
+  "K000001129": {
+    "job_name": "마취병리과의사",
+    "cluster_id": "C4",
+    "silhouette": 0.0845,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3951,
+      "AX2": 0.1449,
+      "AX3": 0.3075,
+      "AX4": 0.0283,
+      "AX5": 0.1242
+    }
+  },
+  "K000001130": {
+    "job_name": "열차객실승무원",
+    "cluster_id": "C6",
+    "silhouette": 0.2153,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0267,
+      "AX2": 0.0282,
+      "AX3": 0.0092,
+      "AX4": 0.0496,
+      "AX5": 0.8863
+    }
+  },
+  "K000001131": {
+    "job_name": "출납창구사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1957,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3478,
+      "AX2": 0.036,
+      "AX3": 0.083,
+      "AX4": 0.2652,
+      "AX5": 0.268
+    }
+  },
+  "K000001132": {
+    "job_name": "정보시스템운영자",
+    "cluster_id": "C1",
+    "silhouette": 0.1089,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3819,
+      "AX2": 0.1698,
+      "AX3": 0.2464,
+      "AX4": 0.1183,
+      "AX5": 0.0837
+    }
+  },
+  "K000001133": {
+    "job_name": "내과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.0305,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1274,
+      "AX2": 0.146,
+      "AX3": 0.187,
+      "AX4": 0.2209,
+      "AX5": 0.3187
+    }
+  },
+  "K000001134": {
+    "job_name": "데이터베이스운영·관리자",
+    "cluster_id": "C4",
+    "silhouette": 0.3436,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5239,
+      "AX2": 0.1352,
+      "AX3": 0.272,
+      "AX4": 0.0489,
+      "AX5": 0.02
+    }
+  },
+  "K000001135": {
+    "job_name": "전기·전자부품·제품조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.2162,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1298,
+      "AX2": 0.1239,
+      "AX3": 0.1547,
+      "AX4": 0.4546,
+      "AX5": 0.137
+    }
+  },
+  "K000001136": {
+    "job_name": "은행사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1921,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3316,
+      "AX2": 0.0327,
+      "AX3": 0.093,
+      "AX4": 0.2209,
+      "AX5": 0.3218
+    }
+  },
+  "K000001137": {
+    "job_name": "신호원 및 수송원",
+    "cluster_id": "C2",
+    "silhouette": 0.2125,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1021,
+      "AX2": 0.4651,
+      "AX3": 0.1466,
+      "AX4": 0.2365,
+      "AX5": 0.0498
+    }
+  },
+  "K000001138": {
+    "job_name": "방송연출가",
+    "cluster_id": "C8",
+    "silhouette": 0.0495,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1722,
+      "AX2": 0.0866,
+      "AX3": 0.3265,
+      "AX4": 0.2391,
+      "AX5": 0.1757
+    }
+  },
+  "K000001139": {
+    "job_name": "조사전문가",
+    "cluster_id": "C7",
+    "silhouette": 0.2759,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2031,
+      "AX2": 0.1198,
+      "AX3": 0.2053,
+      "AX4": 0.3756,
+      "AX5": 0.0961
+    }
+  },
+  "K000001140": {
+    "job_name": "의학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.1905,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1949,
+      "AX2": 0.4,
+      "AX3": 0.3889,
+      "AX4": 0.0062,
+      "AX5": 0.01
+    }
+  },
+  "K000001141": {
+    "job_name": "비누 및 화장품화학공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.0902,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3058,
+      "AX2": 0.1813,
+      "AX3": 0.2284,
+      "AX4": 0.2388,
+      "AX5": 0.0457
+    }
+  },
+  "K000001142": {
+    "job_name": "건축안전·환경기술자 및 건축품질기술자",
+    "cluster_id": "C7",
+    "silhouette": 0.0266,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1336,
+      "AX2": 0.27,
+      "AX3": 0.2017,
+      "AX4": 0.3029,
+      "AX5": 0.0919
+    }
+  },
+  "K000001143": {
+    "job_name": "소규모판매점장",
+    "cluster_id": "C8",
+    "silhouette": 0.0629,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0289,
+      "AX2": 0.0355,
+      "AX3": 0.0576,
+      "AX4": 0.197,
+      "AX5": 0.681
+    }
+  },
+  "K000001144": {
+    "job_name": "영양사",
+    "cluster_id": "C4",
+    "silhouette": 0.0517,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2276,
+      "AX2": 0.1435,
+      "AX3": 0.1221,
+      "AX4": 0.3136,
+      "AX5": 0.1932
+    }
+  },
+  "K000001145": {
+    "job_name": "직조기 및 편직기조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.261,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0877,
+      "AX2": 0.3597,
+      "AX3": 0.1813,
+      "AX4": 0.2905,
+      "AX5": 0.0808
+    }
+  },
+  "K000001146": {
+    "job_name": "산부인과의사",
+    "cluster_id": "C8",
+    "silhouette": 0.176,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1192,
+      "AX2": 0.1754,
+      "AX3": 0.23,
+      "AX4": 0.1301,
+      "AX5": 0.3453
+    }
+  },
+  "K000001147": {
+    "job_name": "위험관리원",
+    "cluster_id": "C2",
+    "silhouette": 0.0592,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1479,
+      "AX2": 0.5711,
+      "AX3": 0.1385,
+      "AX4": 0.1019,
+      "AX5": 0.0406
+    }
+  },
+  "K000001148": {
+    "job_name": "단조원(단조기조작원)",
+    "cluster_id": "C3",
+    "silhouette": 0.2978,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1077,
+      "AX2": 0.3217,
+      "AX3": 0.2974,
+      "AX4": 0.1502,
+      "AX5": 0.123
+    }
+  },
+  "K000001149": {
+    "job_name": "교재·교구 및 이러닝교육전문가",
+    "cluster_id": "C8",
+    "silhouette": 0.0297,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.256,
+      "AX2": 0.0467,
+      "AX3": 0.195,
+      "AX4": 0.2846,
+      "AX5": 0.2175
+    }
+  },
+  "K000001150": {
+    "job_name": "시설·특수경비원",
+    "cluster_id": "C2",
+    "silhouette": 0.1442,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1368,
+      "AX2": 0.3277,
+      "AX3": 0.1621,
+      "AX4": 0.2269,
+      "AX5": 0.1466
+    }
+  },
+  "K000001151": {
+    "job_name": "섬유공학시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.1758,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2953,
+      "AX2": 0.131,
+      "AX3": 0.2696,
+      "AX4": 0.1701,
+      "AX5": 0.1339
+    }
+  },
+  "K000001152": {
+    "job_name": "타이어·고무제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.2182,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0402,
+      "AX2": 0.5151,
+      "AX3": 0.0806,
+      "AX4": 0.2585,
+      "AX5": 0.1056
+    }
+  },
+  "K000001153": {
+    "job_name": "IT테스터 및 IT QA전문가",
+    "cluster_id": "C4",
+    "silhouette": 0.2938,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5126,
+      "AX2": 0.1624,
+      "AX3": 0.2384,
+      "AX4": 0.063,
+      "AX5": 0.0236
+    }
+  },
+  "K000001154": {
+    "job_name": "온라인판매원",
+    "cluster_id": "C6",
+    "silhouette": 0.0903,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2837,
+      "AX2": 0.0682,
+      "AX3": 0.1302,
+      "AX4": 0.0595,
+      "AX5": 0.4584
+    }
+  },
+  "K000001155": {
+    "job_name": "철도·지하철운송사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.1767,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.32,
+      "AX2": 0.0967,
+      "AX3": 0.292,
+      "AX4": 0.2422,
+      "AX5": 0.049
+    }
+  },
+  "K000001156": {
+    "job_name": "환경미화원 및 재활용품수거원",
+    "cluster_id": "C5",
+    "silhouette": -0.0765,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0901,
+      "AX2": 0.2289,
+      "AX3": 0.0581,
+      "AX4": 0.3372,
+      "AX5": 0.2858
+    }
+  },
+  "K000001157": {
+    "job_name": "농림어업시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.0765,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3229,
+      "AX2": 0.1915,
+      "AX3": 0.1624,
+      "AX4": 0.2666,
+      "AX5": 0.0566
+    }
+  },
+  "K000001158": {
+    "job_name": "산업전기공",
+    "cluster_id": "C2",
+    "silhouette": 0.2607,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1904,
+      "AX2": 0.4159,
+      "AX3": 0.1312,
+      "AX4": 0.1664,
+      "AX5": 0.096
+    }
+  },
+  "K000001159": {
+    "job_name": "풍력발전연구 및 개발자",
+    "cluster_id": "C1",
+    "silhouette": 0.1292,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.19,
+      "AX2": 0.3061,
+      "AX3": 0.1306,
+      "AX4": 0.3121,
+      "AX5": 0.0612
+    }
+  },
+  "K000001160": {
+    "job_name": "연극영화방송기술감독",
+    "cluster_id": "C7",
+    "silhouette": 0.0232,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0428,
+      "AX2": 0.1822,
+      "AX3": 0.3412,
+      "AX4": 0.2988,
+      "AX5": 0.135
+    }
+  },
+  "K000001161": {
+    "job_name": "아나운서",
+    "cluster_id": "C8",
+    "silhouette": 0.262,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3101,
+      "AX2": 0.1278,
+      "AX3": 0.2466,
+      "AX4": 0.1343,
+      "AX5": 0.1811
+    }
+  },
+  "K000001162": {
+    "job_name": "보험보상사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1367,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2769,
+      "AX2": 0.055,
+      "AX3": 0.4492,
+      "AX4": 0.0711,
+      "AX5": 0.1479
+    }
+  },
+  "K000001163": {
+    "job_name": "금융상품개발자",
+    "cluster_id": "C8",
+    "silhouette": 0.0691,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4487,
+      "AX2": 0.1082,
+      "AX3": 0.2019,
+      "AX4": 0.1442,
+      "AX5": 0.097
+    }
+  },
+  "K000001164": {
+    "job_name": "화물차·특수차운전원",
+    "cluster_id": "C3",
+    "silhouette": 0.1656,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0702,
+      "AX2": 0.1419,
+      "AX3": 0.4981,
+      "AX4": 0.0574,
+      "AX5": 0.2324
+    }
+  },
+  "K000001165": {
+    "job_name": "금속가공제어장치조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.0713,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0757,
+      "AX2": 0.7703,
+      "AX3": 0.0226,
+      "AX4": 0.1006,
+      "AX5": 0.0309
+    }
+  },
+  "K000001166": {
+    "job_name": "육류·어패류·낙농품가공기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0965,
+      "AX2": 0.3702,
+      "AX3": 0.0909,
+      "AX4": 0.2921,
+      "AX5": 0.1503
+    }
+  },
+  "K000001167": {
+    "job_name": "혼례종사원",
+    "cluster_id": "C6",
+    "silhouette": 0.2041,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0334,
+      "AX2": 0.0477,
+      "AX3": 0.1129,
+      "AX4": 0.0943,
+      "AX5": 0.7117
+    }
+  },
+  "K000001168": {
+    "job_name": "증권·외환딜러",
+    "cluster_id": "C6",
+    "silhouette": 0.0037,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3988,
+      "AX2": 0.0385,
+      "AX3": 0.1665,
+      "AX4": 0.0815,
+      "AX5": 0.3147
+    }
+  },
+  "K000001169": {
+    "job_name": "방송작가",
+    "cluster_id": "C4",
+    "silhouette": 0.0896,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2744,
+      "AX2": 0.2189,
+      "AX3": 0.2885,
+      "AX4": 0.0879,
+      "AX5": 0.1303
+    }
+  },
+  "K000001170": {
+    "job_name": "안내 및 접수사무원",
+    "cluster_id": "C6",
+    "silhouette": 0.1679,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2175,
+      "AX2": 0.0233,
+      "AX3": 0.0377,
+      "AX4": 0.079,
+      "AX5": 0.6425
+    }
+  },
+  "K000001171": {
+    "job_name": "유치원 원장 및 원감",
+    "cluster_id": "C7",
+    "silhouette": 0.3433,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0153,
+      "AX2": 0.0152,
+      "AX3": 0.0761,
+      "AX4": 0.7654,
+      "AX5": 0.1281
+    }
+  },
+  "K000001172": {
+    "job_name": "웹기획자",
+    "cluster_id": "C4",
+    "silhouette": 0.1585,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4041,
+      "AX2": 0.1298,
+      "AX3": 0.3906,
+      "AX4": 0.0514,
+      "AX5": 0.0241
+    }
+  },
+  "K000001173": {
+    "job_name": "제조·생산관리자",
+    "cluster_id": "C1",
+    "silhouette": 0.1701,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0325,
+      "AX2": 0.0486,
+      "AX3": 0.1642,
+      "AX4": 0.681,
+      "AX5": 0.0737
+    }
+  },
+  "K000001174": {
+    "job_name": "점토제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.3464,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0905,
+      "AX2": 0.1589,
+      "AX3": 0.216,
+      "AX4": 0.4272,
+      "AX5": 0.1073
+    }
+  },
+  "K000001175": {
+    "job_name": "위관급 장교",
+    "cluster_id": "C7",
+    "silhouette": 0.0913,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0792,
+      "AX2": 0.0671,
+      "AX3": 0.1398,
+      "AX4": 0.4875,
+      "AX5": 0.2264
+    }
+  },
+  "K000001176": {
+    "job_name": "응용소프트웨어개발자",
+    "cluster_id": "C4",
+    "silhouette": 0.0653,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3787,
+      "AX2": 0.1202,
+      "AX3": 0.4088,
+      "AX4": 0.0716,
+      "AX5": 0.0207
+    }
+  },
+  "K000001177": {
+    "job_name": "건설자재시험원",
+    "cluster_id": "C2",
+    "silhouette": 0.0154,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3295,
+      "AX2": 0.5336,
+      "AX3": 0.0856,
+      "AX4": 0.0366,
+      "AX5": 0.0147
+    }
+  },
+  "K000001178": {
+    "job_name": "메이크업아티스트 및 뷰티매니저",
+    "cluster_id": "C6",
+    "silhouette": 0.1686,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0662,
+      "AX2": 0.1496,
+      "AX3": 0.0934,
+      "AX4": 0.0644,
+      "AX5": 0.6264
+    }
+  },
+  "K000001179": {
+    "job_name": "투자분석가",
+    "cluster_id": "C8",
+    "silhouette": 0.1922,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4452,
+      "AX2": 0.0779,
+      "AX3": 0.2221,
+      "AX4": 0.1183,
+      "AX5": 0.1365
+    }
+  },
+  "K000001180": {
+    "job_name": "법률사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1419,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6397,
+      "AX2": 0.0313,
+      "AX3": 0.1586,
+      "AX4": 0.0451,
+      "AX5": 0.1254
+    }
+  },
+  "K000001181": {
+    "job_name": "연주가",
+    "cluster_id": "C6",
+    "silhouette": 0.012,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0697,
+      "AX2": 0.0603,
+      "AX3": 0.1108,
+      "AX4": 0.5226,
+      "AX5": 0.2365
+    }
+  },
+  "K000001182": {
+    "job_name": "패턴사",
+    "cluster_id": "C6",
+    "silhouette": 0.0033,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.235,
+      "AX2": 0.2187,
+      "AX3": 0.191,
+      "AX4": 0.1917,
+      "AX5": 0.1637
+    }
+  },
+  "K000001183": {
+    "job_name": "속기사",
+    "cluster_id": "C8",
+    "silhouette": 0.1224,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4072,
+      "AX2": 0.1421,
+      "AX3": 0.2692,
+      "AX4": 0.1298,
+      "AX5": 0.0517
+    }
+  },
+  "K000001184": {
+    "job_name": "반도체공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2199,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4507,
+      "AX2": 0.2791,
+      "AX3": 0.1631,
+      "AX4": 0.0886,
+      "AX5": 0.0184
+    }
+  },
+  "K000001185": {
+    "job_name": "자동차공학기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1171,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1349,
+      "AX2": 0.3377,
+      "AX3": 0.2523,
+      "AX4": 0.2575,
+      "AX5": 0.0175
+    }
+  },
+  "K000001186": {
+    "job_name": "청능사",
+    "cluster_id": "C6",
+    "silhouette": 0.0045,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1723,
+      "AX2": 0.1161,
+      "AX3": 0.0617,
+      "AX4": 0.0399,
+      "AX5": 0.61
+    }
+  },
+  "K000001187": {
+    "job_name": "여행사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.2553,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2058,
+      "AX2": 0.0536,
+      "AX3": 0.2516,
+      "AX4": 0.0797,
+      "AX5": 0.4093
+    }
+  },
+  "K000001188": {
+    "job_name": "도배공",
+    "cluster_id": "C2",
+    "silhouette": 0.2485,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0401,
+      "AX2": 0.3044,
+      "AX3": 0.2441,
+      "AX4": 0.1,
+      "AX5": 0.3113
+    }
+  },
+  "K000001189": {
+    "job_name": "금속·재료공학시험원",
+    "cluster_id": "C4",
+    "silhouette": 0.1194,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4126,
+      "AX2": 0.3909,
+      "AX3": 0.0883,
+      "AX4": 0.0888,
+      "AX5": 0.0194
+    }
+  },
+  "K000001190": {
+    "job_name": "연구관리자",
+    "cluster_id": "C4",
+    "silhouette": 0.1034,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2079,
+      "AX2": 0.2703,
+      "AX3": 0.3239,
+      "AX4": 0.1926,
+      "AX5": 0.0053
+    }
+  },
+  "K000001191": {
+    "job_name": "전자계측제어기술자",
+    "cluster_id": "C1",
+    "silhouette": -0.011,
+    "sil_reliable": false,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2266,
+      "AX2": 0.2525,
+      "AX3": 0.3106,
+      "AX4": 0.1722,
+      "AX5": 0.0381
+    }
+  },
+  "K000001192": {
+    "job_name": "주방보조원",
+    "cluster_id": "C5",
+    "silhouette": 0.0897,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0807,
+      "AX2": 0.0505,
+      "AX3": 0.0982,
+      "AX4": 0.1908,
+      "AX5": 0.5799
+    }
+  },
+  "K000001193": {
+    "job_name": "고무 및 플라스틱화학공학기술자 및 연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.0491,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2319,
+      "AX2": 0.2538,
+      "AX3": 0.2717,
+      "AX4": 0.218,
+      "AX5": 0.0246
+    }
+  },
+  "K000001194": {
+    "job_name": "고객상담원",
+    "cluster_id": "C6",
+    "silhouette": 0.1407,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1895,
+      "AX2": 0.0459,
+      "AX3": 0.0303,
+      "AX4": 0.03,
+      "AX5": 0.7044
+    }
+  },
+  "K000001195": {
+    "job_name": "상품중개인 및 경매사",
+    "cluster_id": "C8",
+    "silhouette": 0.001,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4489,
+      "AX2": 0.2263,
+      "AX3": 0.1073,
+      "AX4": 0.0086,
+      "AX5": 0.2089
+    }
+  },
+  "K000001196": {
+    "job_name": "인사·교육·훈련사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1865,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1004,
+      "AX2": 0.016,
+      "AX3": 0.1047,
+      "AX4": 0.6959,
+      "AX5": 0.083
+    }
+  },
+  "K000001197": {
+    "job_name": "광석·석제품생산기계조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.2313,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1057,
+      "AX2": 0.1276,
+      "AX3": 0.0856,
+      "AX4": 0.363,
+      "AX5": 0.3181
+    }
+  },
+  "K000001198": {
+    "job_name": "출판물기획자",
+    "cluster_id": "C8",
+    "silhouette": 0.1662,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2568,
+      "AX2": 0.0556,
+      "AX3": 0.2512,
+      "AX4": 0.2536,
+      "AX5": 0.1827
+    }
+  },
+  "K000001199": {
+    "job_name": "펄프·종이제조장치조작원",
+    "cluster_id": "C3",
+    "silhouette": 0.0756,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1304,
+      "AX2": 0.293,
+      "AX3": 0.3553,
+      "AX4": 0.1713,
+      "AX5": 0.0499
+    }
+  },
+  "K000001200": {
+    "job_name": "영업기획·관리·지원사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.1842,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1023,
+      "AX2": 0.0277,
+      "AX3": 0.1058,
+      "AX4": 0.3016,
+      "AX5": 0.4625
+    }
+  },
+  "K000001201": {
+    "job_name": "법원공무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0319,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3285,
+      "AX2": 0.165,
+      "AX3": 0.1774,
+      "AX4": 0.1909,
+      "AX5": 0.1382
+    }
+  },
+  "K000001202": {
+    "job_name": "전기계측제어기술자",
+    "cluster_id": "C4",
+    "silhouette": 0.1568,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3681,
+      "AX2": 0.3713,
+      "AX3": 0.172,
+      "AX4": 0.0692,
+      "AX5": 0.0195
+    }
+  },
+  "K000001203": {
+    "job_name": "여행안내원",
+    "cluster_id": "C6",
+    "silhouette": 0.166,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0764,
+      "AX2": 0.0452,
+      "AX3": 0.1413,
+      "AX4": 0.1021,
+      "AX5": 0.635
+    }
+  },
+  "K000001204": {
+    "job_name": "계기검침원 및 가스점검원",
+    "cluster_id": "C6",
+    "silhouette": 0.0157,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3998,
+      "AX2": 0.1494,
+      "AX3": 0.15,
+      "AX4": 0.0583,
+      "AX5": 0.2425
+    }
+  },
+  "K000001205": {
+    "job_name": "전기·전자공학시험원",
+    "cluster_id": "C1",
+    "silhouette": 0.3001,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2899,
+      "AX2": 0.1455,
+      "AX3": 0.3138,
+      "AX4": 0.2118,
+      "AX5": 0.0391
+    }
+  },
+  "K000001206": {
+    "job_name": "보험모집인",
+    "cluster_id": "C8",
+    "silhouette": 0.2536,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1899,
+      "AX2": 0.0314,
+      "AX3": 0.168,
+      "AX4": 0.0451,
+      "AX5": 0.5657
+    }
+  },
+  "K000001207": {
+    "job_name": "리포터",
+    "cluster_id": "C6",
+    "silhouette": 0.0436,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1939,
+      "AX2": 0.136,
+      "AX3": 0.3469,
+      "AX4": 0.0532,
+      "AX5": 0.2699
+    }
+  },
+  "K000001208": {
+    "job_name": "조적원",
+    "cluster_id": "C3",
+    "silhouette": 0.3196,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1121,
+      "AX2": 0.4001,
+      "AX3": 0.1151,
+      "AX4": 0.2461,
+      "AX5": 0.1266
+    }
+  },
+  "K000001209": {
+    "job_name": "정육원 및 도축원",
+    "cluster_id": "C5",
+    "silhouette": -0.1032,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1008,
+      "AX2": 0.1134,
+      "AX3": 0.2209,
+      "AX4": 0.1157,
+      "AX5": 0.4492
+    }
+  },
+  "K000001210": {
+    "job_name": "금융관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.3431,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1126,
+      "AX2": 0.0481,
+      "AX3": 0.1227,
+      "AX4": 0.5546,
+      "AX5": 0.162
+    }
+  },
+  "K000001211": {
+    "job_name": "건설·광업기계설치·정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.0281,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1118,
+      "AX2": 0.5439,
+      "AX3": 0.1012,
+      "AX4": 0.1839,
+      "AX5": 0.0593
+    }
+  },
+  "K000001212": {
+    "job_name": "청원경찰",
+    "cluster_id": "C6",
+    "silhouette": 0.0678,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0613,
+      "AX2": 0.342,
+      "AX3": 0.0341,
+      "AX4": 0.0488,
+      "AX5": 0.5137
+    }
+  },
+  "K000001213": {
+    "job_name": "크레인·호이스트운전원",
+    "cluster_id": "C3",
+    "silhouette": 0.3929,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1649,
+      "AX2": 0.2771,
+      "AX3": 0.1115,
+      "AX4": 0.2861,
+      "AX5": 0.1604
+    }
+  },
+  "K000001214": {
+    "job_name": "자전거판매 및 정비원",
+    "cluster_id": "C2",
+    "silhouette": 0.056,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0337,
+      "AX2": 0.1158,
+      "AX3": 0.0433,
+      "AX4": 0.0324,
+      "AX5": 0.7749
+    }
+  },
+  "K000001215": {
+    "job_name": "신용분석가",
+    "cluster_id": "C4",
+    "silhouette": 0.0564,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5425,
+      "AX2": 0.0721,
+      "AX3": 0.0858,
+      "AX4": 0.1154,
+      "AX5": 0.1842
+    }
+  },
+  "K000001216": {
+    "job_name": "예술치료사",
+    "cluster_id": "C8",
+    "silhouette": 0.1734,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0847,
+      "AX2": 0.1019,
+      "AX3": 0.2132,
+      "AX4": 0.0404,
+      "AX5": 0.5598
+    }
+  },
+  "K000001217": {
+    "job_name": "오토바이정비원",
+    "cluster_id": "C1",
+    "silhouette": 0.0349,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0349,
+      "AX2": 0.1604,
+      "AX3": 0.0905,
+      "AX4": 0.104,
+      "AX5": 0.6102
+    }
+  },
+  "K000001218": {
+    "job_name": "홍보도우미 및 판촉원",
+    "cluster_id": "C6",
+    "silhouette": 0.2814,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0279,
+      "AX2": 0.0508,
+      "AX3": 0.0471,
+      "AX4": 0.1109,
+      "AX5": 0.7632
+    }
+  },
+  "K000001219": {
+    "job_name": "전산자료입력원 및 사무보조원",
+    "cluster_id": "C6",
+    "silhouette": 0.0679,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.561,
+      "AX2": 0.0418,
+      "AX3": 0.0831,
+      "AX4": 0.1586,
+      "AX5": 0.1554
+    }
+  },
+  "K000001220": {
+    "job_name": "대학시간강사",
+    "cluster_id": "C4",
+    "silhouette": 0.0727,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5018,
+      "AX2": 0.104,
+      "AX3": 0.2721,
+      "AX4": 0.0342,
+      "AX5": 0.088
+    }
+  },
+  "K000001221": {
+    "job_name": "법무사 및 집행관",
+    "cluster_id": "C8",
+    "silhouette": 0.2276,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5429,
+      "AX2": 0.0797,
+      "AX3": 0.1856,
+      "AX4": 0.101,
+      "AX5": 0.0908
+    }
+  },
+  "K000001222": {
+    "job_name": "방송기자",
+    "cluster_id": "C1",
+    "silhouette": 0.0764,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.4097,
+      "AX2": 0.4299,
+      "AX3": 0.0558,
+      "AX4": 0.0594,
+      "AX5": 0.0453
+    }
+  },
+  "K000001223": {
+    "job_name": "금형원",
+    "cluster_id": "C3",
+    "silhouette": 0.1683,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1133,
+      "AX2": 0.5346,
+      "AX3": 0.2032,
+      "AX4": 0.1031,
+      "AX5": 0.0458
+    }
+  },
+  "K000007449": {
+    "job_name": "회계사",
+    "cluster_id": "C8",
+    "silhouette": 0.0669,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5349,
+      "AX2": 0.0399,
+      "AX3": 0.2936,
+      "AX4": 0.059,
+      "AX5": 0.0726
+    }
+  },
+  "K000007450": {
+    "job_name": "중식조리사",
+    "cluster_id": "C5",
+    "silhouette": 0.121,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0391,
+      "AX2": 0.1249,
+      "AX3": 0.1219,
+      "AX4": 0.3198,
+      "AX5": 0.3944
+    }
+  },
+  "K000007451": {
+    "job_name": "텔레마케터",
+    "cluster_id": "C6",
+    "silhouette": 0.1973,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1916,
+      "AX2": 0.0513,
+      "AX3": 0.0864,
+      "AX4": 0.2264,
+      "AX5": 0.4444
+    }
+  },
+  "K000007452": {
+    "job_name": "가상현실전문가",
+    "cluster_id": "C8",
+    "silhouette": -0.0196,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3806,
+      "AX2": 0.0958,
+      "AX3": 0.3737,
+      "AX4": 0.1225,
+      "AX5": 0.0274
+    }
+  },
+  "K000007453": {
+    "job_name": "취업알선원",
+    "cluster_id": "C8",
+    "silhouette": 0.1199,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0747,
+      "AX2": 0.0109,
+      "AX3": 0.0706,
+      "AX4": 0.1913,
+      "AX5": 0.6524
+    }
+  },
+  "K000007454": {
+    "job_name": "의상디자이너",
+    "cluster_id": "C8",
+    "silhouette": 0.0889,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0694,
+      "AX2": 0.1318,
+      "AX3": 0.5896,
+      "AX4": 0.073,
+      "AX5": 0.1363
+    }
+  },
+  "K000007455": {
+    "job_name": "집배원",
+    "cluster_id": "C1",
+    "silhouette": 0.1105,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1338,
+      "AX2": 0.1483,
+      "AX3": 0.1563,
+      "AX4": 0.1783,
+      "AX5": 0.3834
+    }
+  },
+  "K000007456": {
+    "job_name": "병무행정사무원",
+    "cluster_id": "C6",
+    "silhouette": 0.0431,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6642,
+      "AX2": 0.0442,
+      "AX3": 0.0464,
+      "AX4": 0.1282,
+      "AX5": 0.117
+    }
+  },
+  "K000007457": {
+    "job_name": "한복제조원",
+    "cluster_id": "C1",
+    "silhouette": 0.1165,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0551,
+      "AX2": 0.1579,
+      "AX3": 0.2243,
+      "AX4": 0.1413,
+      "AX5": 0.4213
+    }
+  },
+  "K000007458": {
+    "job_name": "영화감독",
+    "cluster_id": "C7",
+    "silhouette": 0.1794,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0394,
+      "AX2": 0.0433,
+      "AX3": 0.4554,
+      "AX4": 0.372,
+      "AX5": 0.0898
+    }
+  },
+  "K000007459": {
+    "job_name": "영상그래픽디자이너",
+    "cluster_id": "C4",
+    "silhouette": 0.0386,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4136,
+      "AX2": 0.1079,
+      "AX3": 0.2167,
+      "AX4": 0.221,
+      "AX5": 0.041
+    }
+  },
+  "K000007460": {
+    "job_name": "광고영상감독",
+    "cluster_id": "C7",
+    "silhouette": 0.0758,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0714,
+      "AX2": 0.085,
+      "AX3": 0.2509,
+      "AX4": 0.3761,
+      "AX5": 0.2166
+    }
+  },
+  "K000007461": {
+    "job_name": "응급구조사",
+    "cluster_id": "C1",
+    "silhouette": 0.0957,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0727,
+      "AX2": 0.4446,
+      "AX3": 0.024,
+      "AX4": 0.0808,
+      "AX5": 0.3779
+    }
+  },
+  "K000007462": {
+    "job_name": "지게차운전원",
+    "cluster_id": "C3",
+    "silhouette": 0.3048,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0897,
+      "AX2": 0.4496,
+      "AX3": 0.1501,
+      "AX4": 0.1671,
+      "AX5": 0.1435
+    }
+  },
+  "K000007463": {
+    "job_name": "웹디자이너",
+    "cluster_id": "C8",
+    "silhouette": 0.1225,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1846,
+      "AX2": 0.1078,
+      "AX3": 0.2066,
+      "AX4": 0.2789,
+      "AX5": 0.2222
+    }
+  },
+  "K000007464": {
+    "job_name": "자동차영업원",
+    "cluster_id": "C8",
+    "silhouette": 0.1004,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0247,
+      "AX2": 0.0209,
+      "AX3": 0.0469,
+      "AX4": 0.0135,
+      "AX5": 0.8939
+    }
+  },
+  "K000007465": {
+    "job_name": "택시운전원",
+    "cluster_id": "C5",
+    "silhouette": -0.0932,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0272,
+      "AX2": 0.0416,
+      "AX3": 0.0638,
+      "AX4": 0.0383,
+      "AX5": 0.829
+    }
+  },
+  "K000007466": {
+    "job_name": "경리사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0508,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4373,
+      "AX2": 0.0436,
+      "AX3": 0.1205,
+      "AX4": 0.2182,
+      "AX5": 0.1804
+    }
+  },
+  "K000007467": {
+    "job_name": "콘크리트공",
+    "cluster_id": "C2",
+    "silhouette": 0.271,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0716,
+      "AX2": 0.2612,
+      "AX3": 0.1198,
+      "AX4": 0.4634,
+      "AX5": 0.0841
+    }
+  },
+  "K000007468": {
+    "job_name": "버스운전원",
+    "cluster_id": "C2",
+    "silhouette": 0.225,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0451,
+      "AX2": 0.1675,
+      "AX3": 0.1307,
+      "AX4": 0.0574,
+      "AX5": 0.5992
+    }
+  },
+  "K000007469": {
+    "job_name": "선박기관사",
+    "cluster_id": "C2",
+    "silhouette": 0.2522,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.211,
+      "AX2": 0.366,
+      "AX3": 0.1881,
+      "AX4": 0.1567,
+      "AX5": 0.0783
+    }
+  },
+  "K000007470": {
+    "job_name": "변리사",
+    "cluster_id": "C8",
+    "silhouette": 0.1607,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.428,
+      "AX2": 0.2336,
+      "AX3": 0.1335,
+      "AX4": 0.1299,
+      "AX5": 0.0751
+    }
+  },
+  "K000007471": {
+    "job_name": "보험관리자",
+    "cluster_id": "C7",
+    "silhouette": 0.3716,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0359,
+      "AX2": 0.029,
+      "AX3": 0.096,
+      "AX4": 0.5149,
+      "AX5": 0.3243
+    }
+  },
+  "K000007472": {
+    "job_name": "치과의사",
+    "cluster_id": "C7",
+    "silhouette": 0.3056,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0476,
+      "AX2": 0.1375,
+      "AX3": 0.0864,
+      "AX4": 0.3476,
+      "AX5": 0.381
+    }
+  },
+  "K000007473": {
+    "job_name": "조명기사",
+    "cluster_id": "C2",
+    "silhouette": 0.2648,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1085,
+      "AX2": 0.439,
+      "AX3": 0.1763,
+      "AX4": 0.1121,
+      "AX5": 0.1641
+    }
+  },
+  "K000007474": {
+    "job_name": "한약사",
+    "cluster_id": "C6",
+    "silhouette": 0.2101,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.108,
+      "AX2": 0.0315,
+      "AX3": 0.047,
+      "AX4": 0.0491,
+      "AX5": 0.7644
+    }
+  },
+  "K000007475": {
+    "job_name": "건축석공",
+    "cluster_id": "C3",
+    "silhouette": 0.1715,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0556,
+      "AX2": 0.1707,
+      "AX3": 0.285,
+      "AX4": 0.3579,
+      "AX5": 0.1308
+    }
+  },
+  "K000007476": {
+    "job_name": "성우",
+    "cluster_id": "C6",
+    "silhouette": 0.0828,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1083,
+      "AX2": 0.097,
+      "AX3": 0.3207,
+      "AX4": 0.2905,
+      "AX5": 0.1834
+    }
+  },
+  "K000007477": {
+    "job_name": "반려동물미용사",
+    "cluster_id": "C6",
+    "silhouette": 0.1459,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0238,
+      "AX2": 0.0407,
+      "AX3": 0.0269,
+      "AX4": 0.0097,
+      "AX5": 0.8989
+    }
+  },
+  "K000007478": {
+    "job_name": "비서",
+    "cluster_id": "C6",
+    "silhouette": 0.2032,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2374,
+      "AX2": 0.0447,
+      "AX3": 0.0769,
+      "AX4": 0.0861,
+      "AX5": 0.5549
+    }
+  },
+  "K000007479": {
+    "job_name": "안무가",
+    "cluster_id": "C6",
+    "silhouette": 0.1526,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0455,
+      "AX2": 0.1134,
+      "AX3": 0.225,
+      "AX4": 0.5191,
+      "AX5": 0.097
+    }
+  },
+  "K000007480": {
+    "job_name": "건물도장공",
+    "cluster_id": "C3",
+    "silhouette": 0.3123,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0782,
+      "AX2": 0.647,
+      "AX3": 0.0962,
+      "AX4": 0.0814,
+      "AX5": 0.0972
+    }
+  },
+  "K000007481": {
+    "job_name": "미용사",
+    "cluster_id": "C6",
+    "silhouette": 0.2064,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0034,
+      "AX2": 0.0161,
+      "AX3": 0.0593,
+      "AX4": 0.0319,
+      "AX5": 0.8893
+    }
+  },
+  "K000007482": {
+    "job_name": "변호사",
+    "cluster_id": "C8",
+    "silhouette": 0.186,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4953,
+      "AX2": 0.145,
+      "AX3": 0.1769,
+      "AX4": 0.0376,
+      "AX5": 0.1451
+    }
+  },
+  "K000007483": {
+    "job_name": "웨딩플래너",
+    "cluster_id": "C8",
+    "silhouette": 0.0091,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.06,
+      "AX2": 0.0295,
+      "AX3": 0.2295,
+      "AX4": 0.0399,
+      "AX5": 0.641
+    }
+  },
+  "K000007484": {
+    "job_name": "곡식작물재배원",
+    "cluster_id": "C3",
+    "silhouette": 0.2346,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0784,
+      "AX2": 0.5012,
+      "AX3": 0.1392,
+      "AX4": 0.0494,
+      "AX5": 0.2318
+    }
+  },
+  "K000007485": {
+    "job_name": "사회단체활동가",
+    "cluster_id": "C8",
+    "silhouette": 0.2169,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0903,
+      "AX2": 0.034,
+      "AX3": 0.077,
+      "AX4": 0.2599,
+      "AX5": 0.539
+    }
+  },
+  "K000007486": {
+    "job_name": "과수작물재배원",
+    "cluster_id": "C3",
+    "silhouette": 0.1517,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0663,
+      "AX2": 0.1483,
+      "AX3": 0.2219,
+      "AX4": 0.0962,
+      "AX5": 0.4673
+    }
+  },
+  "K000007487": {
+    "job_name": "회계사무원",
+    "cluster_id": "C8",
+    "silhouette": 0.0749,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6822,
+      "AX2": 0.0327,
+      "AX3": 0.0721,
+      "AX4": 0.1519,
+      "AX5": 0.0611
+    }
+  },
+  "K000007488": {
+    "job_name": "경량철골공",
+    "cluster_id": "C3",
+    "silhouette": 0.2282,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1053,
+      "AX2": 0.3957,
+      "AX3": 0.1602,
+      "AX4": 0.2256,
+      "AX5": 0.1132
+    }
+  },
+  "K000007489": {
+    "job_name": "항공교통관제사",
+    "cluster_id": "C1",
+    "silhouette": 0.1578,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3972,
+      "AX2": 0.4256,
+      "AX3": 0.0901,
+      "AX4": 0.0715,
+      "AX5": 0.0156
+    }
+  },
+  "K000007490": {
+    "job_name": "보건교사",
+    "cluster_id": "C6",
+    "silhouette": 0.1436,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2178,
+      "AX2": 0.0932,
+      "AX3": 0.1261,
+      "AX4": 0.0231,
+      "AX5": 0.5398
+    }
+  },
+  "K000007491": {
+    "job_name": "전기안전기술자",
+    "cluster_id": "C2",
+    "silhouette": 0.0103,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3545,
+      "AX2": 0.2671,
+      "AX3": 0.2153,
+      "AX4": 0.1187,
+      "AX5": 0.0444
+    }
+  },
+  "K000007492": {
+    "job_name": "보건의료정보관리사",
+    "cluster_id": "C4",
+    "silhouette": 0.1595,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.846,
+      "AX2": 0.0838,
+      "AX3": 0.0388,
+      "AX4": 0.0136,
+      "AX5": 0.0178
+    }
+  },
+  "K000007493": {
+    "job_name": "역사학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.0396,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4666,
+      "AX2": 0.2701,
+      "AX3": 0.0301,
+      "AX4": 0.1358,
+      "AX5": 0.0974
+    }
+  },
+  "K000007494": {
+    "job_name": "간호사",
+    "cluster_id": "C6",
+    "silhouette": 0.1167,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1038,
+      "AX2": 0.1607,
+      "AX3": 0.0606,
+      "AX4": 0.0929,
+      "AX5": 0.5819
+    }
+  },
+  "K000007495": {
+    "job_name": "소방관",
+    "cluster_id": "C2",
+    "silhouette": 0.2041,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0268,
+      "AX2": 0.3678,
+      "AX3": 0.0457,
+      "AX4": 0.0862,
+      "AX5": 0.4735
+    }
+  },
+  "K000007496": {
+    "job_name": "공업배관공",
+    "cluster_id": "C3",
+    "silhouette": 0.1918,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1339,
+      "AX2": 0.5912,
+      "AX3": 0.1315,
+      "AX4": 0.0799,
+      "AX5": 0.0635
+    }
+  },
+  "K000007497": {
+    "job_name": "수의사보조원",
+    "cluster_id": "C6",
+    "silhouette": 0.2177,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0427,
+      "AX2": 0.0695,
+      "AX3": 0.05,
+      "AX4": 0.0356,
+      "AX5": 0.8022
+    }
+  },
+  "K000007498": {
+    "job_name": "실내장식디자이너",
+    "cluster_id": "C1",
+    "silhouette": 0.0761,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0849,
+      "AX2": 0.1845,
+      "AX3": 0.4097,
+      "AX4": 0.1405,
+      "AX5": 0.1805
+    }
+  },
+  "K000007499": {
+    "job_name": "네트워크관리자",
+    "cluster_id": "C1",
+    "silhouette": 0.1521,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.214,
+      "AX2": 0.1454,
+      "AX3": 0.2404,
+      "AX4": 0.323,
+      "AX5": 0.0772
+    }
+  },
+  "K000007500": {
+    "job_name": "관세사",
+    "cluster_id": "C8",
+    "silhouette": 0.1823,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4117,
+      "AX2": 0.0864,
+      "AX3": 0.0789,
+      "AX4": 0.2813,
+      "AX5": 0.1417
+    }
+  },
+  "K000007501": {
+    "job_name": "물리치료사",
+    "cluster_id": "C6",
+    "silhouette": 0.1998,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.032,
+      "AX2": 0.0238,
+      "AX3": 0.0229,
+      "AX4": 0.0704,
+      "AX5": 0.8508
+    }
+  },
+  "K000007502": {
+    "job_name": "보육교사",
+    "cluster_id": "C6",
+    "silhouette": 0.0455,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0462,
+      "AX2": 0.0407,
+      "AX3": 0.0379,
+      "AX4": 0.0236,
+      "AX5": 0.8516
+    }
+  },
+  "K000007503": {
+    "job_name": "연극연출가",
+    "cluster_id": "C8",
+    "silhouette": 0.1016,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0095,
+      "AX2": 0.0107,
+      "AX3": 0.0397,
+      "AX4": 0.934,
+      "AX5": 0.0061
+    }
+  },
+  "K000007504": {
+    "job_name": "일반의사",
+    "cluster_id": "C6",
+    "silhouette": 0.03,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1868,
+      "AX2": 0.0661,
+      "AX3": 0.334,
+      "AX4": 0.1884,
+      "AX5": 0.2247
+    }
+  },
+  "K000007505": {
+    "job_name": "성악가",
+    "cluster_id": "C6",
+    "silhouette": 0.1875,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0355,
+      "AX2": 0.0606,
+      "AX3": 0.2507,
+      "AX4": 0.2155,
+      "AX5": 0.4377
+    }
+  },
+  "K000007506": {
+    "job_name": "항공기객실승무원",
+    "cluster_id": "C6",
+    "silhouette": 0.0498,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0137,
+      "AX2": 0.0122,
+      "AX3": 0.0414,
+      "AX4": 0.1276,
+      "AX5": 0.8051
+    }
+  },
+  "K000007507": {
+    "job_name": "프로게이머",
+    "cluster_id": "C5",
+    "silhouette": 0.0922,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0634,
+      "AX2": 0.0299,
+      "AX3": 0.3313,
+      "AX4": 0.5218,
+      "AX5": 0.0535
+    }
+  },
+  "K000007508": {
+    "job_name": "부사관",
+    "cluster_id": "C8",
+    "silhouette": -0.0094,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0446,
+      "AX2": 0.0479,
+      "AX3": 0.072,
+      "AX4": 0.5641,
+      "AX5": 0.2714
+    }
+  },
+  "K000007509": {
+    "job_name": "안경사",
+    "cluster_id": "C1",
+    "silhouette": 0.1411,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1237,
+      "AX2": 0.1432,
+      "AX3": 0.0711,
+      "AX4": 0.1033,
+      "AX5": 0.5587
+    }
+  },
+  "K000007510": {
+    "job_name": "떡제조원",
+    "cluster_id": "C2",
+    "silhouette": 0.1343,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0373,
+      "AX2": 0.2413,
+      "AX3": 0.2576,
+      "AX4": 0.0565,
+      "AX5": 0.4073
+    }
+  },
+  "K000007511": {
+    "job_name": "대중무용수",
+    "cluster_id": "C6",
+    "silhouette": 0.1457,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0327,
+      "AX2": 0.077,
+      "AX3": 0.1331,
+      "AX4": 0.3267,
+      "AX5": 0.4306
+    }
+  },
+  "K000007512": {
+    "job_name": "언어학연구원",
+    "cluster_id": "C8",
+    "silhouette": -0.0085,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5978,
+      "AX2": 0.0792,
+      "AX3": 0.0544,
+      "AX4": 0.2131,
+      "AX5": 0.0555
+    }
+  },
+  "K000007513": {
+    "job_name": "방문판매원",
+    "cluster_id": "C6",
+    "silhouette": 0.2081,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0164,
+      "AX2": 0.0114,
+      "AX3": 0.0466,
+      "AX4": 0.0065,
+      "AX5": 0.9192
+    }
+  },
+  "K000007514": {
+    "job_name": "감정평가사",
+    "cluster_id": "C8",
+    "silhouette": 0.2024,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5203,
+      "AX2": 0.1705,
+      "AX3": 0.1055,
+      "AX4": 0.0899,
+      "AX5": 0.1138
+    }
+  },
+  "K000007515": {
+    "job_name": "철도교통관제사",
+    "cluster_id": "C1",
+    "silhouette": 0.1432,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2202,
+      "AX2": 0.1907,
+      "AX3": 0.1586,
+      "AX4": 0.3171,
+      "AX5": 0.1134
+    }
+  },
+  "K000007516": {
+    "job_name": "조세행정사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.141,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6414,
+      "AX2": 0.0727,
+      "AX3": 0.165,
+      "AX4": 0.0637,
+      "AX5": 0.0573
+    }
+  },
+  "K000007517": {
+    "job_name": "총무사무원",
+    "cluster_id": "C6",
+    "silhouette": 0.0898,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3336,
+      "AX2": 0.0511,
+      "AX3": 0.2612,
+      "AX4": 0.1834,
+      "AX5": 0.1707
+    }
+  },
+  "K000007518": {
+    "job_name": "만화가",
+    "cluster_id": "C8",
+    "silhouette": -0.0255,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1869,
+      "AX2": 0.1248,
+      "AX3": 0.3987,
+      "AX4": 0.1178,
+      "AX5": 0.1719
+    }
+  },
+  "K000007519": {
+    "job_name": "보험상품개발자",
+    "cluster_id": "C8",
+    "silhouette": 0.1879,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5081,
+      "AX2": 0.0856,
+      "AX3": 0.2795,
+      "AX4": 0.0831,
+      "AX5": 0.0437
+    }
+  },
+  "K000007520": {
+    "job_name": "육아도우미",
+    "cluster_id": "C5",
+    "silhouette": 0.094,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0132,
+      "AX2": 0.0201,
+      "AX3": 0.0182,
+      "AX4": 0.0044,
+      "AX5": 0.9441
+    }
+  },
+  "K000007521": {
+    "job_name": "경찰관",
+    "cluster_id": "C8",
+    "silhouette": 0.0316,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.322,
+      "AX2": 0.1031,
+      "AX3": 0.1196,
+      "AX4": 0.173,
+      "AX5": 0.2823
+    }
+  },
+  "K000007522": {
+    "job_name": "교육학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.1557,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4215,
+      "AX2": 0.0731,
+      "AX3": 0.1136,
+      "AX4": 0.2295,
+      "AX5": 0.1624
+    }
+  },
+  "K000007523": {
+    "job_name": "검표원",
+    "cluster_id": "C5",
+    "silhouette": 0.2545,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0895,
+      "AX2": 0.043,
+      "AX3": 0.0647,
+      "AX4": 0.0584,
+      "AX5": 0.7444
+    }
+  },
+  "K000007524": {
+    "job_name": "행정사",
+    "cluster_id": "C4",
+    "silhouette": 0.0827,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4655,
+      "AX2": 0.06,
+      "AX3": 0.1547,
+      "AX4": 0.2702,
+      "AX5": 0.0496
+    }
+  },
+  "K000007525": {
+    "job_name": "세무사",
+    "cluster_id": "C8",
+    "silhouette": 0.0971,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1802,
+      "AX2": 0.0175,
+      "AX3": 0.0917,
+      "AX4": 0.5239,
+      "AX5": 0.1868
+    }
+  },
+  "K000007526": {
+    "job_name": "청소년지도사",
+    "cluster_id": "C8",
+    "silhouette": 0.0737,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0494,
+      "AX2": 0.0405,
+      "AX3": 0.2702,
+      "AX4": 0.1808,
+      "AX5": 0.4592
+    }
+  },
+  "K000007527": {
+    "job_name": "판사",
+    "cluster_id": "C8",
+    "silhouette": 0.2247,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4028,
+      "AX2": 0.2121,
+      "AX3": 0.1863,
+      "AX4": 0.0824,
+      "AX5": 0.1163
+    }
+  },
+  "K000007528": {
+    "job_name": "분장사",
+    "cluster_id": "C6",
+    "silhouette": 0.1752,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0352,
+      "AX2": 0.1365,
+      "AX3": 0.4846,
+      "AX4": 0.0597,
+      "AX5": 0.284
+    }
+  },
+  "K000007529": {
+    "job_name": "임상심리사",
+    "cluster_id": "C8",
+    "silhouette": 0.2834,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3035,
+      "AX2": 0.113,
+      "AX3": 0.1231,
+      "AX4": 0.1418,
+      "AX5": 0.3185
+    }
+  },
+  "K000007530": {
+    "job_name": "유치원교사",
+    "cluster_id": "C8",
+    "silhouette": 0.0793,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1306,
+      "AX2": 0.0513,
+      "AX3": 0.1195,
+      "AX4": 0.3577,
+      "AX5": 0.341
+    }
+  },
+  "K000007531": {
+    "job_name": "지질학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2698,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.5033,
+      "AX2": 0.4068,
+      "AX3": 0.0726,
+      "AX4": 0.0136,
+      "AX5": 0.0037
+    }
+  },
+  "K000007532": {
+    "job_name": "사서",
+    "cluster_id": "C7",
+    "silhouette": 0.3427,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0837,
+      "AX2": 0.0628,
+      "AX3": 0.1173,
+      "AX4": 0.3542,
+      "AX5": 0.3819
+    }
+  },
+  "K000007533": {
+    "job_name": "철근공",
+    "cluster_id": "C2",
+    "silhouette": 0.0391,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0397,
+      "AX2": 0.3445,
+      "AX3": 0.097,
+      "AX4": 0.3807,
+      "AX5": 0.1381
+    }
+  },
+  "K000007534": {
+    "job_name": "음식배달원",
+    "cluster_id": "C3",
+    "silhouette": 0.1215,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0543,
+      "AX2": 0.0574,
+      "AX3": 0.097,
+      "AX4": 0.0536,
+      "AX5": 0.7377
+    }
+  },
+  "K000007535": {
+    "job_name": "약학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.032,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4425,
+      "AX2": 0.2119,
+      "AX3": 0.3062,
+      "AX4": 0.0217,
+      "AX5": 0.0176
+    }
+  },
+  "K000007536": {
+    "job_name": "부동산중개인",
+    "cluster_id": "C8",
+    "silhouette": 0.1369,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1736,
+      "AX2": 0.0842,
+      "AX3": 0.1213,
+      "AX4": 0.1427,
+      "AX5": 0.4782
+    }
+  },
+  "K000007537": {
+    "job_name": "작업치료사",
+    "cluster_id": "C8",
+    "silhouette": 0.081,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1659,
+      "AX2": 0.2809,
+      "AX3": 0.2583,
+      "AX4": 0.065,
+      "AX5": 0.2298
+    }
+  },
+  "K000007538": {
+    "job_name": "한식조리사",
+    "cluster_id": "C5",
+    "silhouette": 0.2096,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0431,
+      "AX2": 0.0589,
+      "AX3": 0.1267,
+      "AX4": 0.2014,
+      "AX5": 0.57
+    }
+  },
+  "K000007539": {
+    "job_name": "컴퓨터강사",
+    "cluster_id": "C8",
+    "silhouette": 0.1863,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1742,
+      "AX2": 0.0489,
+      "AX3": 0.223,
+      "AX4": 0.0503,
+      "AX5": 0.5036
+    }
+  },
+  "K000007540": {
+    "job_name": "해양경찰관",
+    "cluster_id": "C2",
+    "silhouette": 0.0422,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3226,
+      "AX2": 0.238,
+      "AX3": 0.0781,
+      "AX4": 0.1838,
+      "AX5": 0.1774
+    }
+  },
+  "K000007541": {
+    "job_name": "생활지도원",
+    "cluster_id": "C6",
+    "silhouette": 0.2162,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0826,
+      "AX2": 0.0557,
+      "AX3": 0.0817,
+      "AX4": 0.1698,
+      "AX5": 0.6103
+    }
+  },
+  "K000007542": {
+    "job_name": "한의사",
+    "cluster_id": "C7",
+    "silhouette": 0.1322,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0822,
+      "AX2": 0.1013,
+      "AX3": 0.1009,
+      "AX4": 0.2364,
+      "AX5": 0.4792
+    }
+  },
+  "K000007543": {
+    "job_name": "촬영기사",
+    "cluster_id": "C2",
+    "silhouette": 0.0069,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0781,
+      "AX2": 0.5473,
+      "AX3": 0.2095,
+      "AX4": 0.0796,
+      "AX5": 0.0855
+    }
+  },
+  "K000007544": {
+    "job_name": "임상병리사",
+    "cluster_id": "C4",
+    "silhouette": 0.1207,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2309,
+      "AX2": 0.5768,
+      "AX3": 0.0423,
+      "AX4": 0.0322,
+      "AX5": 0.1178
+    }
+  },
+  "K000007545": {
+    "job_name": "비파괴검사원",
+    "cluster_id": "C4",
+    "silhouette": 0.1252,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3707,
+      "AX2": 0.4456,
+      "AX3": 0.0885,
+      "AX4": 0.075,
+      "AX5": 0.0203
+    }
+  },
+  "K000007546": {
+    "job_name": "무용가",
+    "cluster_id": "C6",
+    "silhouette": 0.1099,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0226,
+      "AX2": 0.0241,
+      "AX3": 0.1168,
+      "AX4": 0.5396,
+      "AX5": 0.2968
+    }
+  },
+  "K000007547": {
+    "job_name": "안마사",
+    "cluster_id": "C6",
+    "silhouette": 0.2307,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0091,
+      "AX2": 0.0363,
+      "AX3": 0.0423,
+      "AX4": 0.0239,
+      "AX5": 0.8885
+    }
+  },
+  "K000007548": {
+    "job_name": "자동차조립원",
+    "cluster_id": "C3",
+    "silhouette": 0.2068,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1743,
+      "AX2": 0.2262,
+      "AX3": 0.0837,
+      "AX4": 0.4041,
+      "AX5": 0.1116
+    }
+  },
+  "K000007549": {
+    "job_name": "경호원",
+    "cluster_id": "C6",
+    "silhouette": 0.1231,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0527,
+      "AX2": 0.1399,
+      "AX3": 0.065,
+      "AX4": 0.3339,
+      "AX5": 0.4085
+    }
+  },
+  "K000007550": {
+    "job_name": "통계사무원",
+    "cluster_id": "C5",
+    "silhouette": 0.0141,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2548,
+      "AX2": 0.0325,
+      "AX3": 0.0882,
+      "AX4": 0.043,
+      "AX5": 0.5815
+    }
+  },
+  "K000007551": {
+    "job_name": "화가",
+    "cluster_id": "C6",
+    "silhouette": 0.235,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0336,
+      "AX2": 0.0813,
+      "AX3": 0.1777,
+      "AX4": 0.1078,
+      "AX5": 0.5995
+    }
+  },
+  "K000007552": {
+    "job_name": "항공기조종사",
+    "cluster_id": "C1",
+    "silhouette": 0.0066,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.2482,
+      "AX2": 0.3229,
+      "AX3": 0.2503,
+      "AX4": 0.1459,
+      "AX5": 0.0327
+    }
+  },
+  "K000007553": {
+    "job_name": "감사사무원",
+    "cluster_id": "C4",
+    "silhouette": 0.1187,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.6268,
+      "AX2": 0.0606,
+      "AX3": 0.1522,
+      "AX4": 0.1047,
+      "AX5": 0.0557
+    }
+  },
+  "K000007554": {
+    "job_name": "폐기물처리기술자",
+    "cluster_id": "C1",
+    "silhouette": 0.1397,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1238,
+      "AX2": 0.228,
+      "AX3": 0.1714,
+      "AX4": 0.422,
+      "AX5": 0.0547
+    }
+  },
+  "K000007555": {
+    "job_name": "양식조리사",
+    "cluster_id": "C6",
+    "silhouette": 0.1519,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0292,
+      "AX2": 0.0889,
+      "AX3": 0.1111,
+      "AX4": 0.2194,
+      "AX5": 0.5515
+    }
+  },
+  "K000007556": {
+    "job_name": "주방장",
+    "cluster_id": "C6",
+    "silhouette": 0.075,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0123,
+      "AX2": 0.0446,
+      "AX3": 0.0357,
+      "AX4": 0.6446,
+      "AX5": 0.2628
+    }
+  },
+  "K000007557": {
+    "job_name": "택배원",
+    "cluster_id": "C5",
+    "silhouette": -0.0242,
+    "sil_reliable": false,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.208,
+      "AX2": 0.1034,
+      "AX3": 0.2186,
+      "AX4": 0.0889,
+      "AX5": 0.3811
+    }
+  },
+  "K000007558": {
+    "job_name": "초등학교교사",
+    "cluster_id": "C8",
+    "silhouette": 0.058,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1873,
+      "AX2": 0.0552,
+      "AX3": 0.2097,
+      "AX4": 0.1012,
+      "AX5": 0.4466
+    }
+  },
+  "K000007559": {
+    "job_name": "심리학연구원",
+    "cluster_id": "C8",
+    "silhouette": 0.1195,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3295,
+      "AX2": 0.154,
+      "AX3": 0.0265,
+      "AX4": 0.0821,
+      "AX5": 0.4079
+    }
+  },
+  "K000007560": {
+    "job_name": "해외영업원",
+    "cluster_id": "C8",
+    "silhouette": 0.0572,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0969,
+      "AX2": 0.013,
+      "AX3": 0.1465,
+      "AX4": 0.1868,
+      "AX5": 0.5568
+    }
+  },
+  "K000007561": {
+    "job_name": "손해사정사",
+    "cluster_id": "C8",
+    "silhouette": 0.2002,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4528,
+      "AX2": 0.1366,
+      "AX3": 0.1819,
+      "AX4": 0.0949,
+      "AX5": 0.1338
+    }
+  },
+  "K000007562": {
+    "job_name": "노무사",
+    "cluster_id": "C8",
+    "silhouette": 0.2527,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3992,
+      "AX2": 0.0527,
+      "AX3": 0.1985,
+      "AX4": 0.145,
+      "AX5": 0.2046
+    }
+  },
+  "K000007563": {
+    "job_name": "방역원",
+    "cluster_id": "C2",
+    "silhouette": 0.1425,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0964,
+      "AX2": 0.2186,
+      "AX3": 0.1312,
+      "AX4": 0.342,
+      "AX5": 0.2118
+    }
+  },
+  "K000007564": {
+    "job_name": "놀이치료사",
+    "cluster_id": "C8",
+    "silhouette": 0.1602,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0738,
+      "AX2": 0.0616,
+      "AX3": 0.1351,
+      "AX4": 0.0693,
+      "AX5": 0.6601
+    }
+  },
+  "K000007565": {
+    "job_name": "직업상담사",
+    "cluster_id": "C8",
+    "silhouette": 0.0637,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3532,
+      "AX2": 0.0533,
+      "AX3": 0.1217,
+      "AX4": 0.1425,
+      "AX5": 0.3293
+    }
+  },
+  "K000007566": {
+    "job_name": "가사관리사",
+    "cluster_id": "C5",
+    "silhouette": 0.1645,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0181,
+      "AX2": 0.0665,
+      "AX3": 0.0721,
+      "AX4": 0.0165,
+      "AX5": 0.8267
+    }
+  },
+  "K000007567": {
+    "job_name": "게임그래픽디자이너",
+    "cluster_id": "C7",
+    "silhouette": 0.0654,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.0843,
+      "AX2": 0.1131,
+      "AX3": 0.2799,
+      "AX4": 0.501,
+      "AX5": 0.0217
+    }
+  },
+  "K000007568": {
+    "job_name": "물리학연구원",
+    "cluster_id": "C4",
+    "silhouette": 0.2047,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.718,
+      "AX2": 0.2365,
+      "AX3": 0.0107,
+      "AX4": 0.0305,
+      "AX5": 0.0043
+    }
+  },
+  "K000007569": {
+    "job_name": "이용사",
+    "cluster_id": "C5",
+    "silhouette": 0.215,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0088,
+      "AX2": 0.0409,
+      "AX3": 0.0503,
+      "AX4": 0.0149,
+      "AX5": 0.8851
+    }
+  },
+  "K000007570": {
+    "job_name": "교도관",
+    "cluster_id": "C6",
+    "silhouette": 0.1685,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2101,
+      "AX2": 0.1112,
+      "AX3": 0.0259,
+      "AX4": 0.2045,
+      "AX5": 0.4483
+    }
+  },
+  "K000007571": {
+    "job_name": "조각가",
+    "cluster_id": "C6",
+    "silhouette": 0.1115,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0376,
+      "AX2": 0.1263,
+      "AX3": 0.5433,
+      "AX4": 0.056,
+      "AX5": 0.2368
+    }
+  },
+  "K000007572": {
+    "job_name": "소설가",
+    "cluster_id": "C1",
+    "silhouette": 0.1013,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.1696,
+      "AX2": 0.1438,
+      "AX3": 0.3429,
+      "AX4": 0.206,
+      "AX5": 0.1377
+    }
+  },
+  "K000007573": {
+    "job_name": "검사",
+    "cluster_id": "C8",
+    "silhouette": 0.068,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.4944,
+      "AX2": 0.2819,
+      "AX3": 0.1595,
+      "AX4": 0.0355,
+      "AX5": 0.0287
+    }
+  },
+  "K000007574": {
+    "job_name": "연예인매니저",
+    "cluster_id": "C8",
+    "silhouette": 0.034,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.1249,
+      "AX2": 0.0841,
+      "AX3": 0.2376,
+      "AX4": 0.1999,
+      "AX5": 0.3535
+    }
+  },
+  "K000007575": {
+    "job_name": "경비원",
+    "cluster_id": "C6",
+    "silhouette": 0.0338,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0784,
+      "AX2": 0.125,
+      "AX3": 0.0707,
+      "AX4": 0.1625,
+      "AX5": 0.5634
+    }
+  },
+  "K000007576": {
+    "job_name": "간호조무사",
+    "cluster_id": "C6",
+    "silhouette": 0.1135,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0747,
+      "AX2": 0.1593,
+      "AX3": 0.0421,
+      "AX4": 0.0376,
+      "AX5": 0.6863
+    }
+  },
+  "K000007577": {
+    "job_name": "치과기공사",
+    "cluster_id": "C4",
+    "silhouette": 0.166,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2641,
+      "AX2": 0.4235,
+      "AX3": 0.1962,
+      "AX4": 0.0313,
+      "AX5": 0.0849
+    }
+  },
+  "K000007578": {
+    "job_name": "선박객실승무원",
+    "cluster_id": "C5",
+    "silhouette": 0.1202,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0275,
+      "AX2": 0.0178,
+      "AX3": 0.0087,
+      "AX4": 0.0521,
+      "AX5": 0.8939
+    }
+  },
+  "K000007579": {
+    "job_name": "일식조리사",
+    "cluster_id": "C6",
+    "silhouette": 0.1601,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.0248,
+      "AX2": 0.0593,
+      "AX3": 0.0732,
+      "AX4": 0.1863,
+      "AX5": 0.6564
+    }
+  },
+  "K000007580": {
+    "job_name": "게임프로그래머",
+    "cluster_id": "C4",
+    "silhouette": 0.1506,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2666,
+      "AX2": 0.42,
+      "AX3": 0.2364,
+      "AX4": 0.0576,
+      "AX5": 0.0193
+    }
+  },
+  "K000007581": {
+    "job_name": "3D프린팅모델러",
+    "cluster_id": "C1",
+    "silhouette": 0.0524,
+    "sil_reliable": true,
+    "is_simulation_target": false,
+    "weights": {
+      "AX1": 0.3067,
+      "AX2": 0.1398,
+      "AX3": 0.1697,
+      "AX4": 0.2625,
+      "AX5": 0.1213
+    }
+  },
+  "K000007582": {
+    "job_name": "환경영향평가원",
+    "cluster_id": "C8",
+    "silhouette": 0.0104,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.3037,
+      "AX2": 0.1475,
+      "AX3": 0.1034,
+      "AX4": 0.4024,
+      "AX5": 0.0431
+    }
+  },
+  "K000007583": {
+    "job_name": "작곡가",
+    "cluster_id": "C5",
+    "silhouette": 0.1162,
+    "sil_reliable": true,
+    "is_simulation_target": true,
+    "weights": {
+      "AX1": 0.2702,
+      "AX2": 0.083,
+      "AX3": 0.4314,
+      "AX4": 0.0454,
+      "AX5": 0.17
+    }
+  }
+}

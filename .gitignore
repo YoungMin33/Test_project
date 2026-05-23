@@ -1,0 +1,11 @@
+# KNOW 원본 XML (대용량)
+data/raw/K*/
+data/raw/job_data_raw.zip
+data/raw/jobsList.txt
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+.env
+reports/
