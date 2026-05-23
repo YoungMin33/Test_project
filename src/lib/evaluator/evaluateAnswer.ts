@@ -159,8 +159,9 @@ function toMissionScore(evaluation: Evaluation, mission: Mission): MissionScore 
 function heuristicFallbackEvaluation(mission: Mission, answer: string, cause: string): Evaluation {
   const length = normalizeText(answer).length;
   const numberCount = countNumbers(answer);
-  const repetitionPenalty = uniqueTokenRatio(answer) < 0.45 ? 0.12 : 0;
-  const genericDetail = length >= 80 ? 0.08 : length >= 30 ? 0.04 : 0;
+  const uniqueness = uniqueTokenRatio(answer);
+  const repetitionPenalty = uniqueness < 0.45 ? 0.9 : uniqueness < 0.6 ? 0.35 : 0;
+  const lengthLevel = length >= 260 ? 3 : length >= 140 ? 2 : length >= 45 ? 1 : 0;
   const markersByAxis: Record<(typeof AXES)[number], string[]> = {
     AX1: ["data", "log", "metric", "rate", "ratio", "compare", "p=", "%"],
     AX2: ["check", "observe", "pattern", "trace", "inspect", "explore"],
@@ -173,25 +174,49 @@ function heuristicFallbackEvaluation(mission: Mission, answer: string, cause: st
     const hits = keywordHits(answer, mission.rubric?.[axis] ?? []);
     const markerHits = countMarkers(answer, markersByAxis[axis]);
     const signal = mission.axis_signals?.[axis] ?? 0;
-    const numericBonus = axis === "AX1" ? Math.min(numberCount, 3) * 0.15 : 0;
-    const markerBonus = Math.min(markerHits, 3) * 0.18;
-    const keywordScore = hits.length * 0.45;
-    const signalBonus = signal * 0.8;
-    const raw = keywordScore + markerBonus + numericBonus + signalBonus;
+    const keywordLevel = Math.min(hits.length, 5);
+    const markerLevel = Math.min(markerHits, 4);
+    const numericLevel = axis === "AX1" ? Math.min(numberCount, 4) : 0;
+    const signalLevel = signal * 4;
+    const evidenceShapeBonus = keywordLevel >= 2 && (markerLevel >= 1 || numericLevel >= 1) ? 0.55 : 0;
+    const raw =
+      keywordLevel * 0.55 +
+      markerLevel * 0.35 +
+      numericLevel * 0.28 +
+      signalLevel * 0.38 +
+      lengthLevel * 0.22 +
+      evidenceShapeBonus -
+      repetitionPenalty;
 
     let score = 0;
-    if (raw >= 1.8 && length >= 40 && uniqueTokenRatio(answer) >= 0.45) score = 2;
+    if (raw >= 4.2 && length >= 120 && uniqueness >= 0.55) score = 4;
+    else if (raw >= 3.0 && length >= 80 && uniqueness >= 0.5) score = 3;
+    else if (raw >= 1.65 && length >= 35 && uniqueness >= 0.45) score = 2;
     else if (raw >= 0.45) score = 1;
 
+    if (hits.length === 0 && markerHits === 0 && numericLevel === 0) {
+      score = 0;
+    }
+
     const confidence = score === 0
-      ? clamp(0.08 + signal * 0.1, 0.05, 0.18)
-      : clamp(0.18 + hits.length * 0.06 + markerHits * 0.04 + signal * 0.12 + genericDetail - repetitionPenalty, 0.16, 0.52);
+      ? clamp(0.08 + signal * 0.1, 0.05, 0.2)
+      : clamp(
+          0.16 +
+          score * 0.08 +
+          Math.min(hits.length, 4) * 0.035 +
+          Math.min(markerHits, 3) * 0.025 +
+          signal * 0.14 +
+          lengthLevel * 0.025 -
+          repetitionPenalty * 0.08,
+          0.18,
+          0.68
+        );
 
     return [axis, {
       score,
       confidence: Number(confidence.toFixed(2)),
       evidence: [],
-      reason: `Heuristic fallback (${cause}). keyword_hits=${hits.length}, marker_hits=${markerHits}, signal=${signal.toFixed(2)}.`
+      reason: `Heuristic fallback (${cause}). raw=${raw.toFixed(2)}, keyword_hits=${hits.length}, marker_hits=${markerHits}, signal=${signal.toFixed(2)}, length_level=${lengthLevel}, uniqueness=${uniqueness.toFixed(2)}.`
     }];
   })) as Evaluation["axes"];
 
