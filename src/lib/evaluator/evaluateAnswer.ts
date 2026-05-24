@@ -27,12 +27,12 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-function emptyAxis() {
+function emptyAxis(reason?: string) {
   return {
     score: 0,
     confidence: 0,
     evidence: [],
-    reason: "No validated evidence."
+    reason: reason ?? "답변에서 해당 축과 관련된 구체적인 행동이나 근거를 찾을 수 없습니다."
   };
 }
 
@@ -97,7 +97,11 @@ function validateAndRecalculate(answer: string, evaluation: Evaluation): Evaluat
     });
 
     if (axisResult.evidence.length === 0) {
-      evaluation.axes[axis] = emptyAxis();
+      const originalReason = axisResult.reason;
+      const hasLLMReason = originalReason && originalReason !== "No validated evidence." && originalReason.length > 5;
+      evaluation.axes[axis] = emptyAxis(
+        hasLLMReason ? `[검증 후 근거 불인정] ${originalReason}` : undefined
+      );
       continue;
     }
 

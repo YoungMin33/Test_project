@@ -277,13 +277,15 @@ function axisEvidenceSummary(){
 }
 
 function evidenceStatusText(ax,r){
-  const pct=Math.round((r.confidence||0)*100);
   const evCount=r.evidence?.length||0;
-  const flagText=r.flags?.length?` flags=${r.flags.join(', ')}`:'';
-  if(evCount>0&&r.confidence>=0.7)return`${AX_LABELS[ax]}는 인용 근거 ${evCount}개와 신뢰도 ${pct}%로 점수 ${r.score}가 산출되었습니다.${flagText}`;
-  if(evCount>0)return`${AX_LABELS[ax]}는 인용 근거 ${evCount}개가 있으나 신뢰도 ${pct}%라 점수 ${r.score}로 제한해 해석합니다.${flagText}`;
-  if(r.score>0)return`${AX_LABELS[ax]}는 점수 ${r.score}가 산출되었지만 인용 근거가 0개라 신뢰도 ${pct}%로 표시합니다.${flagText}`;
-  return`${AX_LABELS[ax]}는 점수 0, 인용 근거 0개, 신뢰도 ${pct}%입니다.${flagText}`;
+  const hasLowConf=r.flags?.includes('low_confidence');
+  const tooShort=r.flags?.includes('too_short');
+  if(tooShort)return`${AX_LABELS[ax]} 영역은 답변이 짧아 충분한 판단이 어렵습니다.`;
+  if(evCount>0&&r.confidence>=0.7)return`${AX_LABELS[ax]} 영역은 답변에서 명확한 근거가 확인되어 신뢰도 있게 평가되었습니다.`;
+  if(evCount>0&&hasLowConf)return`${AX_LABELS[ax]} 영역은 관련 내용이 있으나 신뢰도가 낮아 보수적으로 해석됩니다.`;
+  if(evCount>0)return`${AX_LABELS[ax]} 영역은 일부 근거가 확인되었으나 추가 답변이 있으면 더 정확히 평가할 수 있습니다.`;
+  if(r.score>0)return`${AX_LABELS[ax]} 영역은 내용이 확인되었으나 구체적인 근거 문장이 부족합니다.`;
+  return`${AX_LABELS[ax]} 영역에서 관련 행동이나 근거를 찾을 수 없습니다.`;
 }
 
 /* ── 채점 ── */
@@ -340,9 +342,14 @@ function cosineSim(a,b){
   return mA*mB===0?0:dot/(mA*mB);
 }
 
-function computeCompatibility(profile){
+function computeCompatibility(profile, rawProfile){
   const sum=AXES.reduce((s,ax)=>s+(profile[ax]||0),0);
   const result={};
+
+  // 실제 수행 점수 합계 → 성과가 낮으면 적합도도 낮아지도록
+  const rawTotal=AXES.reduce((s,ax)=>s+(rawProfile?rawProfile[ax]||0:0),0);
+  const perfFactor=Math.min(rawTotal/0.4, 1.0);
+
   state.selectedJobs.forEach(jc=>{
     if(sum===0){result[jc]=0;return;}
     const jd=JOB_DEFS.find(j=>j.job_code===jc);
@@ -350,7 +357,7 @@ function computeCompatibility(profile){
     const jw=JOB_WEIGHTS[jd.real_job_code];
     if(!jw){result[jc]=0;return;}
     const sim=cosineSim(normalizeProfile(profile),jw.w);
-    result[jc]=Math.round((sim+1)/2*100);
+    result[jc]=Math.round((sim+1)/2*perfFactor*100);
   });
   return result;
 }
@@ -360,6 +367,15 @@ function getRecommendations(profile,clusterId,excludeCode,topN=3){
   return Object.entries(JOB_WEIGHTS)
     .filter(([c,v])=>v.c===clusterId&&v.r===true&&c!==excludeCode)
     .map(([c,v])=>({code:c,name:v.n,sim:cosineSim(norm,v.w),w:v.w}))
+    .sort((a,b)=>b.sim-a.sim).slice(0,topN);
+}
+
+// 적합도 낮을 때 다른 군집에서 추천
+function getCrossClusterRecommendations(profile,excludeClusterId,excludeCode,topN=3){
+  const norm=normalizeProfile(profile);
+  return Object.entries(JOB_WEIGHTS)
+    .filter(([c,v])=>v.c!==excludeClusterId&&v.r===true&&c!==excludeCode)
+    .map(([c,v])=>({code:c,name:v.n,sim:cosineSim(norm,v.w),w:v.w,cluster:v.c}))
     .sort((a,b)=>b.sim-a.sim).slice(0,topN);
 }
 
@@ -470,8 +486,9 @@ function rMission(){
 function rResult(){
   const all=[];
   Object.values(state.missionScores).forEach(arr=>all.push(...arr));
-  state.axisProfile=normalizeProfile(computeProfile(all));
-  state.compatibility=computeCompatibility(state.axisProfile);
+  const rawProfile=computeProfile(all);
+  state.axisProfile=normalizeProfile(rawProfile);
+  state.compatibility=computeCompatibility(state.axisProfile, rawProfile);
   return`${brand()}
   <h1 class="stitle">당신의 직무 적성 프로파일</h1>
   <p class="sdesc">미션 수행 패턴과 자기보고를 기반으로 분석했습니다.</p>
@@ -551,19 +568,24 @@ function rEvidence(){
   const summary=axisEvidenceSummary();
   const cards=AXES.map(ax=>{
     const r=summary[ax];
-    const evCount=r.evidence.length;
+    const evCount=r.evidence?.length||0;
     const low=r.confidence<0.55||evCount===0;
-    const quotes=r.evidence.length
+
+    // 인용 근거 문장만 표시 (quote만, 내부 수치 노출 없음)
+    const quotes=evCount>0
       ? r.evidence.map(ev=>`<div class="ev-quote">"${esc(ev.quote)}"</div>`).join('')
-      : `<div class="ev-quote ev-low">score=${r.score}, confidence=${Math.round((r.confidence||0)*100)}%, evidence=0</div>`;
-    const rationale=evCount>0?(r.evidence[0]?.rationale||r.reason||evidenceStatusText(ax,r)):evidenceStatusText(ax,r);
+      : '';
+
+    // 자연어 설명: evidenceStatusText만 사용 (score/confidence/flags 노출 없음)
+    const summary_text=evidenceStatusText(ax,r);
+
     return`<div class="ev-card">
       <div class="ev-head">
         <div class="ev-title">${ax} ${AX_LABELS[ax]}</div>
-        <div class="ev-meta${low?' ev-low':''}">점수 ${r.score} / 신뢰도 ${Math.round((r.confidence||0)*100)}% / 근거 ${evCount}</div>
+        <div class="ev-meta${low?' ev-low':''}">${low?'판단 근거 부족':'근거 확인됨'}</div>
       </div>
-      <div class="ev-quotes">${quotes}</div>
-      <div class="ev-rationale">${esc(rationale)}</div>
+      ${quotes?`<div class="ev-quotes">${quotes}</div>`:''}
+      <div class="ev-rationale">${esc(summary_text)}</div>
     </div>`;
   }).join('');
   return`<div class="rs"><div class="rs-title">Evidence 기반 평가 설명</div><div class="ev-list">${cards}</div></div>`;
@@ -653,25 +675,31 @@ function rRec(){
     const jw=JOB_WEIGHTS[jd.real_job_code];
     if(!jw)return'';
     const sc=state.compatibility[jc]||0;
-    const recs=getRecommendations(p,jw.c,jd.real_job_code,3);
+    const isLowScore=sc<60;
+    const recs=isLowScore
+      ? getCrossClusterRecommendations(p,jw.c,jd.real_job_code,3)
+      : getRecommendations(p,jw.c,jd.real_job_code,3);
     if(!recs.length)return'';
 
     const cards=recs.map(r=>{
       const simPct=Math.round((r.sim+1)/2*100);
       // 각 축: 직업값(금) vs 내값(파) 이중 바
       // 두 값 모두 RADAR_SCALE 기준으로 퍼센트화 → 바가 채워지는 정도로 맞음/안맞음 직관적으로 표시
+      // 내 axisProfile 기준 각 축 점수 (0~100)
+      const myScore=Math.round(((p.AX1||0)+(p.AX2||0)+(p.AX3||0)+(p.AX4||0)+(p.AX5||0))*100);
       const bars=AXES.map(ax=>{
-        const jobV=Math.min((r.w[ax]||0)*RADAR_SCALE*100,100); // 직업 기준
-        const meV =Math.min((p[ax]||0)*RADAR_SCALE*100,100);   // 내 비중
-        const diff=Math.abs(jobV-meV);
+        const jobPct=Math.min((r.w[ax]||0)*RADAR_SCALE*100,100); // 직업 기준 (바 너비용)
+        const mePct =Math.min((p[ax]||0)*RADAR_SCALE*100,100);   // 내 비중 (바 너비용)
+        const diff=Math.abs(jobPct-mePct);
         const matchColor=diff<15?'var(--success)':diff<30?'var(--warn)':'var(--danger)';
+        const matchLabel=diff<15?'적합':diff<30?'보통':'차이 있음';
         return`<div class="ax-row">
           <span class="ax-lbl">${AX_LABELS[ax].split('·')[0]}</span>
           <div class="ax-bw">
-            <div class="ax-bf-job" style="width:${jobV.toFixed(0)}%"></div>
-            <div class="ax-bf-me"  style="width:${meV.toFixed(0)}%;opacity:0.85"></div>
+            <div class="ax-bf-job" style="width:${jobPct.toFixed(0)}%"></div>
+            <div class="ax-bf-me"  style="width:${mePct.toFixed(0)}%;opacity:0.85"></div>
           </div>
-          <span class="ax-vals" style="color:${matchColor}">${meV.toFixed(0)}/${jobV.toFixed(0)}</span>
+          <span class="ax-vals" style="color:${matchColor}">${matchLabel}</span>
         </div>`;
       }).join('');
 
@@ -680,12 +708,13 @@ function rRec(){
           <span class="rec-jname">${r.name}</span>
           <span class="rec-pct">유사도 ${simPct}%</span>
         </div>
-        <div style="font-size:11px;color:var(--sub);margin-bottom:8px">파란 바=내 비중 / 금색 바=직업 기준 (수치: 내/직업)</div>
+        <div style="font-size:11px;color:var(--sub);margin-bottom:8px">파란 바=내 역량 비중 / 금색 바=직업 기준</div>
         <div class="ax-bars">${bars}</div>
       </div>`;
     }).join('');
 
-    const lowMsg=sc<60?`<p style="font-size:13px;color:var(--sub);margin-bottom:12px">${jd.job_name} 적합도 <b style="color:var(--warn)">${sc}점</b> — 같은 계열에서 더 잘 맞는 직업을 찾아봤어요.</p>`
+    const lowMsg=sc<60
+      ?`<p style="font-size:13px;color:var(--sub);margin-bottom:12px">${jd.job_name} 적합도 <b style="color:var(--warn)">${sc}점</b> — 다른 방향의 직업군에서 더 잘 맞는 직업을 찾아봤어요.</p>`
       :`<p style="font-size:13px;color:var(--sub);margin-bottom:12px">같은 직업군(군집 ${jw.c}) 내 유사 직업도 살펴보세요.</p>`;
     return`<div style="margin-bottom:28px">
       <div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:8px">${jd.icon} ${jd.job_name} 관련 추천</div>
@@ -697,28 +726,116 @@ function rRec(){
 }
 
 /* ── 기대 vs 현실 ── */
+
+// 축 기반 역량 성격 설명
+const AX_NATURE = {
+  AX1: '데이터 분석 및 논리적 추론',
+  AX2: '현상 관찰 및 세부 탐색',
+  AX3: '전략 수립 및 의사결정',
+  AX4: '팀 협업 및 조직 조율',
+  AX5: '고객 공감 및 소통'
+};
+
+// 유저 입력 텍스트에서 주요 성격 추론
+function inferExpectNature(q1, q2){
+  const text=(q1+' '+q2).toLowerCase();
+  const signals={
+    AX1:['분석','데이터','수치','논리','통계','파악','원인'],
+    AX2:['관찰','탐색','확인','조사','현황','점검'],
+    AX3:['전략','기획','의사결정','방향','우선순위','판단','계획'],
+    AX4:['협업','팀','소통','보고','조율','관리','리더'],
+    AX5:['고객','서비스','공감','응대','소통','만족','케어']
+  };
+  const scores={};
+  AXES.forEach(ax=>{
+    scores[ax]=(signals[ax]||[]).filter(k=>text.includes(k)).length;
+  });
+  const top=AXES.sort((a,b)=>scores[b]-scores[a]).filter(ax=>scores[ax]>0);
+  if(!top.length)return null;
+  return top.slice(0,2).map(ax=>AX_NATURE[ax]);
+}
+
+// 미션 axis_signals에서 실제 요구 역량 추론
+function inferMissionNature(missions){
+  const avg={};
+  AXES.forEach(ax=>avg[ax]=0);
+  missions.filter(Boolean).forEach(m=>{
+    AXES.forEach(ax=>{ avg[ax]+=(m.axis_signals?.[ax]||0); });
+  });
+  const sorted=AXES.slice().sort((a,b)=>avg[b]-avg[a]);
+  return sorted.slice(0,2).filter(ax=>avg[ax]>0).map(ax=>AX_NATURE[ax]);
+}
+
+function gapSummary(jc){
+  const ans=state.preqAnswers[jc]||{};
+  const missions=getMissions(jc);
+  const scores=state.missionScores[jc]||[];
+  const q1=ans.q1||'';
+  const q2=ans.q2||'';
+
+  // 기대 요약
+  const expectNature=inferExpectNature(q1,q2);
+  const expectLine=expectNature&&expectNature.length
+    ? expectNature.join(' · ') + ' 중심'
+    : '사전 예상이 입력되지 않았습니다';
+
+  // 실제 미션 요구 역량 요약
+  const missionNature=inferMissionNature(missions);
+  const realLine=missionNature.length
+    ? missionNature.join(' · ') + ' 중심'
+    : '미션 데이터 없음';
+
+  // 실제 수행 패턴 (유저가 실제로 보여준 역량)
+  const performed={};
+  AXES.forEach(ax=>performed[ax]=0);
+  scores.forEach(s=>AXES.forEach(ax=>{ performed[ax]+=(s[ax]||0); }));
+  const topPerf=AXES.slice().sort((a,b)=>performed[b]-performed[a]).filter(ax=>performed[ax]>0);
+  const perfLine=topPerf.length
+    ? topPerf.slice(0,2).map(ax=>AX_NATURE[ax]).join(' · ') + ' 위주로 수행'
+    : '수행 데이터 없음';
+
+  // 기대-현실 차이 코멘트
+  const expectAxes=expectNature?AXES.filter(ax=>expectNature.includes(AX_NATURE[ax])):[];
+  const realAxes=AXES.filter(ax=>missionNature.includes(AX_NATURE[ax]));
+  const match=expectAxes.filter(ax=>realAxes.includes(ax));
+  let diffComment='';
+  if(!q1&&!q2){
+    diffComment='사전 예상을 입력하지 않아 비교가 어렵습니다.';
+  } else if(match.length>=2){
+    diffComment='기대한 역량과 실제 미션 요구 역량이 잘 일치합니다.';
+  } else if(match.length===1){
+    diffComment=`기대와 현실이 "${AX_NATURE[match[0]]}" 측면에서 부분적으로 일치합니다.`;
+  } else {
+    diffComment='기대했던 역량보다 다른 방향의 사고가 실제 미션에서 요구되었습니다.';
+  }
+
+  return{expectLine, realLine, perfLine, diffComment};
+}
+
 function rGap(){
-  const rows=state.selectedJobs.map(jc=>{
+  const cards=state.selectedJobs.map(jc=>{
     const jd=JOB_DEFS.find(j=>j.job_code===jc);
-    const ans=state.preqAnswers[jc]||{};
-    const m1=getMissions(jc)[0], m2=getMissions(jc)[1];
-    return`<tr>
-      <td>${jd.icon} ${jd.job_name}</td>
-      <td>
-        <div style="margin-bottom:6px"><span style="color:var(--sub);font-size:11px">예상 주요 업무</span><br>${ans.q1||'(입력 없음)'}</div>
-        <div><span style="color:var(--sub);font-size:11px">예상 핵심 능력</span><br>${ans.q2||'(입력 없음)'}</div>
-      </td>
-      <td>
-        <div style="margin-bottom:6px"><span style="color:var(--sub);font-size:11px">실제 미션 1</span><br>${m1?m1.title+' — '+m1.task.slice(0,55)+'…':''}</div>
-        <div><span style="color:var(--sub);font-size:11px">실제 미션 2</span><br>${m2?m2.title+' — '+m2.task.slice(0,55)+'…':''}</div>
-      </td>
-    </tr>`;
+    const {expectLine,realLine,perfLine,diffComment}=gapSummary(jc);
+    return`<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px">
+      <div style="font-size:13px;font-weight:700;margin-bottom:14px">${jd.icon} ${jd.job_name}</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:12px">
+        <div style="display:flex;align-items:baseline;gap:8px">
+          <span style="font-size:11px;color:var(--sub);min-width:48px;flex-shrink:0">기대</span>
+          <span style="font-size:13px;color:var(--text)">${esc(expectLine)}</span>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:8px">
+          <span style="font-size:11px;color:var(--sub);min-width:48px;flex-shrink:0">현실</span>
+          <span style="font-size:13px;color:var(--text)">${esc(realLine)}</span>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:8px">
+          <span style="font-size:11px;color:var(--sub);min-width:48px;flex-shrink:0">수행</span>
+          <span style="font-size:13px;color:var(--accent-hi)">${esc(perfLine)}</span>
+        </div>
+      </div>
+      <div style="font-size:12px;color:var(--accent);border-top:1px solid var(--border);padding-top:10px">💡 ${esc(diffComment)}</div>
+    </div>`;
   }).join('');
-  return`<div class="rs"><div class="rs-title">기대 vs 현실</div>
-  <div style="overflow-x:auto"><table class="gap-tbl">
-    <thead><tr><th>직무</th><th>사전 예상</th><th>실제 미션</th></tr></thead>
-    <tbody>${rows}</tbody>
-  </table></div></div>`;
+  return`<div class="rs"><div class="rs-title">기대 vs 현실</div>${cards}</div>`;
 }
 
 /* ── 이벤트 ── */
